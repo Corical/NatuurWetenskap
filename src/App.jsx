@@ -564,6 +564,287 @@ const NatuurwetenskappeQuiz = () => {
       }
     ];
 
+    // AI-generated questions for Natuurwetenskappe (20 additional questions)
+    const aiQuestions = [
+      {
+        id: 'ai_q1',
+        unit: 'Die aarde beweeg',
+        question: 'Waarom is dit dag aan die een kant van die aarde en nag aan die ander kant?',
+        type: 'multiple_choice',
+        options: [
+          'Omdat die aarde om sy as draai',
+          'Omdat die son beweeg',
+          'Omdat die maan skyn',
+          'Omdat wolke die son bedek'
+        ],
+        correctAnswer: 'Omdat die aarde om sy as draai',
+        explanation: 'Die aarde draai om sy as, so slegs die helfte wat na die son wys kry sonlig (dag), terwyl die ander kant donker is (nag). (AI gegenereer)',
+        difficulty: 'medium',
+        page: 'AI',
+        source: 'ai'
+      },
+      {
+        id: 'ai_q2',
+        unit: 'Die aarde beweeg',
+        question: 'As dit somer in Suid-Afrika is, watter seisoen is dit in Europa?',
+        type: 'multiple_choice',
+        options: ['Winter', 'Somer', 'Lente', 'Herfs'],
+        correctAnswer: 'Winter',
+        explanation: 'Omdat die aarde se as gekantel is, wanneer dit somer in die suidelike halfrond is, is dit winter in die noordelike halfrond. (AI gegenereer)',
+        difficulty: 'hard',
+        page: 'AI',
+        source: 'ai'
+      },
+      {
+        id: 'ai_q3',
+        unit: 'Grond - Soorte grond',
+        question: 'Hoekom is leemgrond die beste vir landbou?',
+        type: 'multiple_choice',
+        options: [
+          'Dit het \'n goeie mengsel van sand, klei en humus',
+          'Dit is die goedkoopste',
+          'Dit is slegs klei',
+          'Dit hou geen water nie'
+        ],
+        correctAnswer: 'Dit het \'n goeie mengsel van sand, klei en humus',
+        explanation: 'Leemgrond kombineer die beste eienskappe: goeie dreinering (sand), waterretensie (klei) en voedingstowwe (humus). (AI gegenereer)',
+        difficulty: 'medium',
+        page: 'AI',
+        source: 'ai'
+      },
+      {
+        id: 'ai_q4',
+        unit: 'Grond - Soorte grond',
+        question: 'Wat kan gebeur as grond te veel water verloor?',
+        type: 'multiple_choice',
+        options: [
+          'Dit kan uitdroog en plante kan nie groei nie',
+          'Dit word natter',
+          'Dit word swaarder',
+          'Dit verander kleur'
+        ],
+        correctAnswer: 'Dit kan uitdroog en plante kan nie groei nie',
+        explanation: 'Grond benodig water vir plante om te groei. As dit te droog word, kan plante nie oorleef nie. (AI gegenereer)',
+        difficulty: 'easy',
+        page: 'AI',
+        source: 'ai'
+      },
+      {
+        id: 'ai_q5',
+        unit: 'Grond',
+        question: 'Mikroörganismes in grond help om dooie plantmateriaal af te breek.',
+        type: 'true_false',
+        correctAnswer: true,
+        explanation: 'Waar! Bakterieë en ander mikroörganismes breek dooie plantmateriaal af en maak voedingstowwe beskikbaar vir nuwe plante. (AI gegenereer)',
+        difficulty: 'medium',
+        page: 'AI',
+        source: 'ai'
+      },
+      {
+        id: 'ai_q6',
+        unit: 'Sedimentêre gesteentes',
+        question: 'Hoekom vind ons sedimentêre gesteentes meestal naby water?',
+        type: 'multiple_choice',
+        options: [
+          'Omdat hulle in water gevorm het deur lae sediment',
+          'Omdat hulle water absorbeer',
+          'Omdat hulle nat moet bly',
+          'Omdat visse daarvan hou'
+        ],
+        correctAnswer: 'Omdat hulle in water gevorm het deur lae sediment',
+        explanation: 'Sedimentêre gesteentes vorm wanneer sediment (sand, modder) in water sink en oor miljoene jare saampers. (AI gegenereer)',
+        difficulty: 'medium',
+        page: 'AI',
+        source: 'ai'
+      },
+      {
+        id: 'ai_q7',
+        unit: 'Sedimentêre gesteentes',
+        question: 'Watter van die volgende gesteentes word gebruik om geboue te bou? (Kies al wat van toepassing is)',
+        type: 'multiple_select',
+        options: ['Sandsteen', 'Kalksteen', 'Skalie', 'Alle bogenoemde'],
+        correctAnswers: ['Sandsteen', 'Kalksteen', 'Skalie'],
+        explanation: 'Sandsteen, kalksteen en skalie word almal in konstruksie gebruik. Hulle is sterk en maklik om mee te werk. (AI gegenereer)',
+        difficulty: 'medium',
+        page: 'AI',
+        source: 'ai'
+      },
+      {
+        id: 'ai_q8',
+        unit: 'Sedimentêre gesteentes',
+        question: 'Steenkool word gebruik as brandstof om energie te maak.',
+        type: 'true_false',
+        correctAnswer: true,
+        explanation: 'Waar! Steenkool word verbrand in kragstasies om elektrisiteit te genereer. Dit is \'n belangrike energiebron. (AI gegenereer)',
+        difficulty: 'easy',
+        page: 'AI',
+        source: 'ai'
+      },
+      {
+        id: 'ai_q9',
+        unit: 'Fossiele',
+        question: 'Hoekom is fossiele so belangrik vir wetenskaplikes?',
+        type: 'multiple_choice',
+        options: [
+          'Hulle vertel ons van lewe in die verlede',
+          'Hulle is mooi om na te kyk',
+          'Hulle is baie geld werd',
+          'Hulle gloei in die donker'
+        ],
+        correctAnswer: 'Hulle vertel ons van lewe in die verlede',
+        explanation: 'Fossiele gee wetenskaplikes leidrade oor hoe plante en diere lank gelede gelyk en geleef het. (AI gegenereer)',
+        difficulty: 'easy',
+        page: 'AI',
+        source: 'ai'
+      },
+      {
+        id: 'ai_q10',
+        unit: 'Fossiele',
+        question: 'Kan sagte liggaamsdele soos vel en spiere maklik fossiliseer?',
+        type: 'true_false',
+        correctAnswer: false,
+        explanation: 'Onwaar! Sagte liggaamsdele verrot vinnig. Slegs harde dele soos bene, tande en skulpe vorm gewoonlik fossiele. (AI gegenereer)',
+        difficulty: 'medium',
+        page: 'AI',
+        source: 'ai'
+      },
+      {
+        id: 'ai_q11',
+        unit: 'Fossiele',
+        question: 'Wat is die verskil tussen \'n liggaamsfossiel en \'n spoorfossiel?',
+        type: 'multiple_choice',
+        options: [
+          'Liggaamsfossiel is \'n deel van die organisme, spoorfossiel is \'n teken van aktiwiteit',
+          'Daar is geen verskil nie',
+          'Spoorfossiel is groter',
+          'Liggaamsfossiel is jonger'
+        ],
+        correctAnswer: 'Liggaamsfossiel is \'n deel van die organisme, spoorfossiel is \'n teken van aktiwiteit',
+        explanation: 'Liggaamsfossiele is werklike dele (bene, tande), terwyl spoorfossiele spore is wat agtergelaat is (voetspore, neste). (AI gegenereer)',
+        difficulty: 'medium',
+        page: 'AI',
+        source: 'ai'
+      },
+      {
+        id: 'ai_q12',
+        unit: 'Fossiele',
+        question: 'Dinosaurusse het miljoene jare gelede uitgesterf.',
+        type: 'true_false',
+        correctAnswer: true,
+        explanation: 'Waar! Dinosaurusse het ongeveer 65 miljoen jaar gelede uitgesterf. Ons leer van hulle deur fossiele te bestudeer. (AI gegenereer)',
+        difficulty: 'easy',
+        page: 'AI',
+        source: 'ai'
+      },
+      {
+        id: 'ai_q13',
+        unit: 'Die belangrikheid van Suid-Afrikaanse fossiele',
+        question: 'Waarom word Afrika die "Wieg van die Mensdom" genoem?',
+        type: 'multiple_choice',
+        options: [
+          'Omdat daar baie fossiele van vroeë mense gevind is',
+          'Omdat dit die grootste kontinent is',
+          'Omdat daar baie babas gebore word',
+          'Omdat dit warm is'
+        ],
+        correctAnswer: 'Omdat daar baie fossiele van vroeë mense gevind is',
+        explanation: 'Afrika het baie fossiele van vroeë menslike voorouers, wat wys dat mense waarskynlik hier ontstaan het. (AI gegenereer)',
+        difficulty: 'medium',
+        page: 'AI',
+        source: 'ai'
+      },
+      {
+        id: 'ai_q14',
+        unit: 'Die belangrikheid van Suid-Afrikaanse fossiele',
+        question: 'Die Sterkfonteingrotte is belangrik vir fossielnavorsing.',
+        type: 'true_false',
+        correctAnswer: true,
+        explanation: 'Waar! Die Sterkfonteingrotte bevat baie belangrike fossiele van vroeë menslike voorouers en is \'n wêrelderfenisgebied. (AI gegenereer)',
+        difficulty: 'easy',
+        page: 'AI',
+        source: 'ai'
+      },
+      {
+        id: 'ai_q15',
+        unit: 'Sedimentêre gesteentes: Hoofeienskappe',
+        question: 'Watter eienskap het al die sedimentêre gesteentes in gemeen?',
+        type: 'multiple_choice',
+        options: [
+          'Hulle het lae',
+          'Hulle is rooi',
+          'Hulle is altyd hard',
+          'Hulle kan brand'
+        ],
+        correctAnswer: 'Hulle het lae',
+        explanation: 'Alle sedimentêre gesteentes het sigbare lae omdat hulle oor tyd gevorm het deur opeenvolgende lae sediment. (AI gegenereer)',
+        difficulty: 'medium',
+        page: 'AI',
+        source: 'ai'
+      },
+      {
+        id: 'ai_q16',
+        unit: 'Grond',
+        question: 'Hoekom is bogrond donkerder as ondergrond?',
+        type: 'multiple_choice',
+        options: [
+          'Omdat dit humus bevat',
+          'Omdat dit nat is',
+          'Omdat die son dit verbrand',
+          'Omdat dit ouer is'
+        ],
+        correctAnswer: 'Omdat dit humus bevat',
+        explanation: 'Bogrond bevat baie humus (verotte plantmateriaal) wat donker van kleur is en die grond vrugbaar maak. (AI gegenereer)',
+        difficulty: 'medium',
+        page: 'AI',
+        source: 'ai'
+      },
+      {
+        id: 'ai_q17',
+        unit: 'Grond',
+        question: 'Alle grond is dieselfde regoor die wêreld.',
+        type: 'true_false',
+        correctAnswer: false,
+        explanation: 'Onwaar! Verskillende plekke het verskillende grondtipes afhangende van klimaat, gesteentes en plantlewe. (AI gegenereer)',
+        difficulty: 'easy',
+        page: 'AI',
+        source: 'ai'
+      },
+      {
+        id: 'ai_q18',
+        unit: 'Die aarde beweeg',
+        question: 'Die aarde is die enigste planeet in ons sonnestelsel wat lewe het.',
+        type: 'true_false',
+        correctAnswer: true,
+        explanation: 'Waar! Sover ons weet, is die aarde die enigste planeet in ons sonnestelsel met lewe. (AI gegenereer)',
+        difficulty: 'easy',
+        page: 'AI',
+        source: 'ai'
+      },
+      {
+        id: 'ai_q19',
+        unit: '\'n Paar gebruike van sedimentêre gesteentes',
+        question: 'Watter van die volgende produkte word van kalksteen gemaak? (Kies al wat van toepassing is)',
+        type: 'multiple_select',
+        options: ['Sement', 'Tandepasta', 'Verf', 'Papier'],
+        correctAnswers: ['Sement', 'Tandepasta', 'Verf'],
+        explanation: 'Kalksteen word gebruik in sement, tandepasta, medikasie en verf. Dit is \'n baie veelsydige gesteente. (AI gegenereer)',
+        difficulty: 'hard',
+        page: 'AI',
+        source: 'ai'
+      },
+      {
+        id: 'ai_q20',
+        unit: 'Belangrike Suid-Afrikaanse fossiele',
+        question: 'Die selakant is \'n spesiale vis omdat wetenskaplikes gedink het dit was uitgesterf.',
+        type: 'true_false',
+        correctAnswer: true,
+        explanation: 'Waar! Die selakant is \'n "lewende fossiel" - \'n vis wat ons gedink het miljoene jare gelede uitgesterf het, maar in 1938 lewend gevind is. (AI gegenereer)',
+        difficulty: 'medium',
+        page: 'AI',
+        source: 'ai'
+      }
+    ];
+
     // Geografie questions
     const geografieUnit1Questions = [
       {
@@ -821,7 +1102,13 @@ const NatuurwetenskappeQuiz = () => {
       'eenheid_1': questionBank.unit1 || [],
       'eenheid_2': questionBank.unit2 || [],
       'eenheid_3': questionBank.unit3 || [],
-      'eenheid_4': questionBank.unit4 || []
+      'eenheid_4': questionBank.unit4 || [],
+      'eenheid_5': questionBank.unit5 || [],
+      'eenheid_6': questionBank.unit6 || [],
+      'eenheid_7': questionBank.unit7 || [],
+      'eenheid_8': questionBank.unit8 || [],
+      'eenheid_9': questionBank.unit9 || [],
+      'eenheid_10': questionBank.unit10 || []
     };
 
     selectedUnits.forEach(unitId => {
@@ -910,24 +1197,244 @@ const NatuurwetenskappeQuiz = () => {
       }
     ];
 
-    // Add web questions if count is set
+    // AI-generated questions for Geografie (15 additional questions)
+    const geografieAiQuestions = [
+      {
+        id: 'geo_ai_q1',
+        unit: 'Die weer',
+        question: 'Hoekom is die son belangrik vir die weer?',
+        type: 'multiple_choice',
+        options: [
+          'Dit verwarm die aarde en lug',
+          'Dit maak wind',
+          'Dit maak reën',
+          'Dit maak wolke'
+        ],
+        correctAnswer: 'Dit verwarm die aarde en lug',
+        explanation: 'Die son verwarm die aarde en die lug, wat al die ander weerelemente beïnvloed. (AI gegenereer)',
+        difficulty: 'medium',
+        page: 'AI',
+        source: 'ai'
+      },
+      {
+        id: 'geo_ai_q2',
+        unit: 'Die weer',
+        question: 'Reën is die enigste vorm van neerslag.',
+        type: 'true_false',
+        correctAnswer: false,
+        explanation: 'Onwaar! Neerslag sluit reën, sneeu en hael in. (AI gegenereer)',
+        difficulty: 'easy',
+        page: 'AI',
+        source: 'ai'
+      },
+      {
+        id: 'geo_ai_q3',
+        unit: 'Neerslag',
+        question: 'Wat gebeur met water wanneer dit baie koud word?',
+        type: 'multiple_choice',
+        options: [
+          'Dit vries en word ys of sneeu',
+          'Dit verdamp',
+          'Dit word warmer',
+          'Dit verander kleur'
+        ],
+        correctAnswer: 'Dit vries en word ys of sneeu',
+        explanation: 'Water vries by 0°C en kan sneeu of ys word. Dit is hoe ons sneeu en hael kry. (AI gegenereer)',
+        difficulty: 'easy',
+        page: 'AI',
+        source: 'ai'
+      },
+      {
+        id: 'geo_ai_q4',
+        unit: 'Meet die weer',
+        question: 'Watter weerinstument gebruik kwik of alkohol om te werk?',
+        type: 'multiple_choice',
+        options: ['Termometer', 'Reënmeter', 'Windwyser', 'Barometer'],
+        correctAnswer: 'Termometer',
+        explanation: '\'n Termometer gebruik kwik of alkohol wat uitsit wanneer dit warm word en krimp wanneer dit koud word. (AI gegenereer)',
+        difficulty: 'medium',
+        page: 'AI',
+        source: 'ai'
+      },
+      {
+        id: 'geo_ai_q5',
+        unit: 'Meet die weer',
+        question: 'By watter temperatuur kook water?',
+        type: 'multiple_choice',
+        options: ['0°C', '50°C', '100°C', '150°C'],
+        correctAnswer: '100°C',
+        explanation: 'Water kook by 100 grade Celsius op seevlak. (AI gegenereer)',
+        difficulty: 'easy',
+        page: 'AI',
+        source: 'ai'
+      },
+      {
+        id: 'geo_ai_q6',
+        unit: 'Windrigting',
+        question: 'As die wind uit die weste waai, noem ons dit \'n westewind.',
+        type: 'true_false',
+        correctAnswer: true,
+        explanation: 'Waar! Wind word genoem volgens die rigting waarvandaan dit kom, nie waarheen dit waai nie. (AI gegenereer)',
+        difficulty: 'medium',
+        page: 'AI',
+        source: 'ai'
+      },
+      {
+        id: 'geo_ai_q7',
+        unit: 'Weerpatrone',
+        question: 'Waarom het ons vier seisoene?',
+        type: 'multiple_choice',
+        options: [
+          'Omdat die aarde se as gekantel is',
+          'Omdat die son beweeg',
+          'Omdat die maan beweeg',
+          'Omdat die wind waai'
+        ],
+        correctAnswer: 'Omdat die aarde se as gekantel is',
+        explanation: 'Die aarde se as is gekantel, daarom kry verskillende dele van die aarde op verskillende tye meer of minder sonlig. (AI gegenereer)',
+        difficulty: 'hard',
+        page: 'AI',
+        source: 'ai'
+      },
+      {
+        id: 'geo_ai_q8',
+        unit: 'Weerpatrone',
+        question: 'Watter seisoen kom na die winter?',
+        type: 'multiple_choice',
+        options: ['Lente', 'Somer', 'Herfs', 'Winter weer'],
+        correctAnswer: 'Lente',
+        explanation: 'Die seisoene volg in hierdie volgorde: somer, herfs, winter, lente. (AI gegenereer)',
+        difficulty: 'easy',
+        page: 'AI',
+        source: 'ai'
+      },
+      {
+        id: 'geo_ai_q9',
+        unit: 'Jaarlikse reënval',
+        question: 'Hoekom is jaarlikse reënval belangrik?',
+        type: 'multiple_choice',
+        options: [
+          'Dit vertel ons hoeveel water \'n area kry vir plante en diere',
+          'Dit is net \'n nommer',
+          'Dit het geen betekenis nie',
+          'Dit vertel ons van die wind'
+        ],
+        correctAnswer: 'Dit vertel ons hoeveel water \'n area kry vir plante en diere',
+        explanation: 'Jaarlikse reënval help ons om te verstaan of \'n plek genoeg water het vir boerdery en plantlewe. (AI gegenereer)',
+        difficulty: 'medium',
+        page: 'AI',
+        source: 'ai'
+      },
+      {
+        id: 'geo_ai_q10',
+        unit: 'Reënvalpatrone',
+        question: 'Kaapstad kry die meeste reën in die winter.',
+        type: 'true_false',
+        correctAnswer: true,
+        explanation: 'Waar! Die Wes-Kaap kry winterreën, terwyl die meeste van Suid-Afrika somerreën kry. (AI gegenereer)',
+        difficulty: 'medium',
+        page: 'AI',
+        source: 'ai'
+      },
+      {
+        id: 'geo_ai_q11',
+        unit: 'Klimaat',
+        question: 'Wat is die verskil tussen weer en klimaat?',
+        type: 'multiple_choice',
+        options: [
+          'Weer is korttermyn, klimaat is langtermyn oor baie jare',
+          'Weer en klimaat is dieselfde',
+          'Klimaat is korttermyn, weer is langtermyn',
+          'Daar is geen verskil nie'
+        ],
+        correctAnswer: 'Weer is korttermyn, klimaat is langtermyn oor baie jare',
+        explanation: 'Weer beskryf die toestand vandag of hierdie week. Klimaat beskryf die gemiddelde oor 30 jaar of meer. (AI gegenereer)',
+        difficulty: 'medium',
+        page: 'AI',
+        source: 'ai'
+      },
+      {
+        id: 'geo_ai_q12',
+        unit: 'Klimaat',
+        question: 'Al die plekke in Suid-Afrika het dieselfde klimaat.',
+        type: 'true_false',
+        correctAnswer: false,
+        explanation: 'Onwaar! Suid-Afrika het baie verskillende klimaatsones - van warm en vogtig tot droog en koud. (AI gegenereer)',
+        difficulty: 'easy',
+        page: 'AI',
+        source: 'ai'
+      },
+      {
+        id: 'geo_ai_q13',
+        unit: 'Klimaatstreke',
+        question: 'Watter klimaat het die Kalahari-woestyn?',
+        type: 'multiple_choice',
+        options: [
+          'Baie warm en droog',
+          'Koel en nat',
+          'Altyd koud',
+          'Altyd bewolk'
+        ],
+        correctAnswer: 'Baie warm en droog',
+        explanation: 'Die Kalahari is \'n woestyn met baie warm, droë somers en min reën. (AI gegenereer)',
+        difficulty: 'easy',
+        page: 'AI',
+        source: 'ai'
+      },
+      {
+        id: 'geo_ai_q14',
+        unit: 'Klimaat',
+        question: 'Hoekom is dit belangrik om die klimaat te verstaan?',
+        type: 'multiple_choice',
+        options: [
+          'Dit help ons om te weet watter gewasse om te plant en hoe om te leef',
+          'Dit is nie belangrik nie',
+          'Dit vertel ons van gister se weer',
+          'Dit vertel ons slegs van temperatuur'
+        ],
+        correctAnswer: 'Dit help ons om te weet watter gewasse om te plant en hoe om te leef',
+        explanation: 'Klimaat help ons om besluite te neem oor landbou, watervoorsiening en waar om te bly. (AI gegenereer)',
+        difficulty: 'medium',
+        page: 'AI',
+        source: 'ai'
+      },
+      {
+        id: 'geo_ai_q15',
+        unit: 'Meet die weer',
+        question: 'Weerstasies neem elke dag metings van die weer.',
+        type: 'true_false',
+        correctAnswer: true,
+        explanation: 'Waar! Weerstasies neem daagliks metings om die weer en klimaat te bestudeer en voorspellings te maak. (AI gegenereer)',
+        difficulty: 'easy',
+        page: 'AI',
+        source: 'ai'
+      }
+    ];
+
+    // Add web/AI questions if count is set
     const currentSubjectData = subjects[selectedSubject].data;
     const currentWebQuestions = selectedSubject === 'geografie' ? geografieWebQuestions : webQuestions;
+    const currentAiQuestions = selectedSubject === 'geografie' ? geografieAiQuestions : aiQuestions;
+
     if (webQuestionCount > 0) {
-      const relevantWebQuestions = currentWebQuestions.filter(q => {
-        // Only include web questions for selected units
+      // Combine web and AI questions
+      const combinedExtraQuestions = [...currentWebQuestions, ...currentAiQuestions];
+
+      const relevantExtraQuestions = combinedExtraQuestions.filter(q => {
+        // Only include questions for selected units
         return selectedUnits.some(unitId => {
           const unit = currentSubjectData.units.find(u => u.unit_id === unitId);
           return unit && q.unit.includes(unit.title);
         });
       });
-      // Shuffle and take the requested number of web questions
-      const shuffledWebQuestions = [...relevantWebQuestions];
-      for (let i = shuffledWebQuestions.length - 1; i > 0; i--) {
+
+      // Shuffle and take the requested number of extra questions
+      const shuffledExtraQuestions = [...relevantExtraQuestions];
+      for (let i = shuffledExtraQuestions.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [shuffledWebQuestions[i], shuffledWebQuestions[j]] = [shuffledWebQuestions[j], shuffledWebQuestions[i]];
+        [shuffledExtraQuestions[i], shuffledExtraQuestions[j]] = [shuffledExtraQuestions[j], shuffledExtraQuestions[i]];
       }
-      allQuestions.push(...shuffledWebQuestions.slice(0, Math.min(webQuestionCount, shuffledWebQuestions.length)));
+      allQuestions.push(...shuffledExtraQuestions.slice(0, Math.min(webQuestionCount, shuffledExtraQuestions.length)));
     }
 
     // Filter by difficulty
@@ -1156,11 +1663,11 @@ const NatuurwetenskappeQuiz = () => {
                 />
               </div>
 
-              {/* Web Questions Count */}
-              <div className="bg-blue-50 p-4 rounded-lg">
+              {/* Extra Questions Count (Web + AI) */}
+              <div className="bg-gradient-to-r from-purple-50 to-green-50 p-4 rounded-lg border-2 border-purple-200">
                 <h2 className="text-xl font-semibold mb-3">
-                  Internet Vrae: {webQuestionCount}
-                  {webQuestionCount > 0 && <span className="text-sm font-normal text-gray-600 ml-2">(van die internet)</span>}
+                  Ekstra Vrae: {webQuestionCount}
+                  {webQuestionCount > 0 && <span className="text-sm font-normal text-gray-600 ml-2">(🌐 Internet + 🤖 AI)</span>}
                 </h2>
                 <input
                   type="range"
@@ -1171,7 +1678,7 @@ const NatuurwetenskappeQuiz = () => {
                   className="w-full"
                 />
                 <p className="text-sm text-gray-600 mt-2">
-                  Stel op 0 vir slegs handboek vrae, of kies hoeveel internet vrae jy wil byvoeg
+                  Stel op 0 vir slegs handboek vrae, of kies hoeveel ekstra vrae (Internet + AI gegenereer) jy wil byvoeg
                 </p>
               </div>
 
@@ -1221,6 +1728,11 @@ const NatuurwetenskappeQuiz = () => {
                     🌐 Internet
                   </span>
                 )}
+                {currentQuestion.source === 'ai' && (
+                  <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-green-100 text-green-800 border border-green-300 whitespace-nowrap">
+                    🤖 AI
+                  </span>
+                )}
               </div>
               {currentQuestion.type === 'multiple_select' && (
                 <p className="text-sm text-gray-600 italic">Kies al wat van toepassing is</p>
@@ -1228,6 +1740,11 @@ const NatuurwetenskappeQuiz = () => {
               {currentQuestion.source === 'web' && (
                 <p className="text-xs text-purple-600 italic mt-2">
                   Hierdie vraag kom van die internet, nie uit die handboek nie
+                </p>
+              )}
+              {currentQuestion.source === 'ai' && (
+                <p className="text-xs text-green-600 italic mt-2">
+                  Hierdie vraag is AI-gegenereer gebaseer op die kurrikulum
                 </p>
               )}
             </div>
@@ -1378,6 +1895,11 @@ const NatuurwetenskappeQuiz = () => {
                                 🌐 Internet
                               </span>
                             )}
+                            {q.source === 'ai' && (
+                              <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-green-100 text-green-800 border border-green-300 whitespace-nowrap">
+                                🤖 AI
+                              </span>
+                            )}
                           </div>
                           <p className="text-sm mb-1">
                             <span className="font-semibold">Jou antwoord: </span>
@@ -1435,9 +1957,20 @@ const NatuurwetenskappeQuiz = () => {
             </div>
 
             {webQuestionCount > 0 && (
-              <div className="bg-purple-50 p-4 rounded-lg mb-6 border border-purple-200">
+              <div className="bg-gradient-to-r from-purple-50 to-green-50 p-4 rounded-lg mb-6 border border-purple-200">
                 <p className="text-sm text-gray-700">
-                  🌐 Hierdie toets het <span className="font-semibold">{quizQuestions.filter(q => q.source === 'web').length}</span> internet vra{quizQuestions.filter(q => q.source === 'web').length === 1 ? 'ag' : 'e'} ingesluit
+                  {quizQuestions.filter(q => q.source === 'web').length > 0 && (
+                    <>
+                      🌐 <span className="font-semibold">{quizQuestions.filter(q => q.source === 'web').length}</span> Internet vra{quizQuestions.filter(q => q.source === 'web').length === 1 ? 'ag' : 'e'}
+                    </>
+                  )}
+                  {quizQuestions.filter(q => q.source === 'web').length > 0 && quizQuestions.filter(q => q.source === 'ai').length > 0 && ' en '}
+                  {quizQuestions.filter(q => q.source === 'ai').length > 0 && (
+                    <>
+                      🤖 <span className="font-semibold">{quizQuestions.filter(q => q.source === 'ai').length}</span> AI vra{quizQuestions.filter(q => q.source === 'ai').length === 1 ? 'ag' : 'e'}
+                    </>
+                  )}
+                  {' '}ingesluit
                 </p>
               </div>
             )}
@@ -1710,6 +2243,11 @@ const NatuurwetenskappeQuiz = () => {
                           {q.source === 'web' && (
                             <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-purple-100 text-purple-800 border border-purple-300 whitespace-nowrap">
                               🌐 Internet
+                            </span>
+                          )}
+                          {q.source === 'ai' && (
+                            <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-green-100 text-green-800 border border-green-300 whitespace-nowrap">
+                              🤖 AI
                             </span>
                           )}
                         </div>

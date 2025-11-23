@@ -906,6 +906,725 @@ const natuurwetenskappeQuestions = {
       difficulty: 'easy',
       page: '96-97'
     }
+  ],
+
+  // Unit 5: Sedimentêre gesteentes - Hoofeienskappe (Main properties)
+  unit5: [
+    {
+      id: 'NW_U5_001',
+      unit: 'Sedimentêre gesteentes: Hoofeienskappe',
+      question: 'Hoe verdeel geoloë sedimentêre gesteentes?',
+      type: 'multiple_choice',
+      options: ['In groepe', 'In kleure', 'In groottes', 'In vorms'],
+      correctAnswer: 'In groepe',
+      explanation: 'Geoloë verdeel sedimentêre gesteentes in groepe. Bladsy 86',
+      difficulty: 'easy',
+      page: '86'
+    },
+    {
+      id: 'NW_U5_002',
+      unit: 'Sedimentêre gesteentes: Hoofeienskappe',
+      question: 'Waaruit word sandsteen gevorm?',
+      type: 'multiple_choice',
+      options: ['Wanneer sanderige sediment saamgepers word', 'Uit klei', 'Uit plantmateriaal', 'Uit kristalle'],
+      correctAnswer: 'Wanneer sanderige sediment saamgepers word',
+      explanation: 'Sandsteen word gevorm wanneer sanderige sediment saamgepers word en soliede rots vorm. Bladsy 86',
+      difficulty: 'easy',
+      page: '86'
+    },
+    {
+      id: 'NW_U5_003',
+      unit: 'Sedimentêre gesteentes: Hoofeienskappe',
+      question: 'Waaruit bestaan kalksteen?',
+      type: 'multiple_choice',
+      options: ['Mariene organismes, koraal en skulpe', 'Sand', 'Klei', 'Plantmateriaal'],
+      correctAnswer: 'Mariene organismes, koraal en skulpe',
+      explanation: 'Kalksteen bestaan uit mariene organismes, koraal en skulpe. Bladsy 86',
+      difficulty: 'medium',
+      page: '86'
+    },
+    {
+      id: 'NW_U5_004',
+      unit: 'Sedimentêre gesteentes: Hoofeienskappe',
+      question: 'Waaruit bestaan steenkool?',
+      type: 'multiple_choice',
+      options: ['Plantmateriaal', 'Dieremateriaal', 'Sand', 'Klei'],
+      correctAnswer: 'Plantmateriaal',
+      explanation: 'Steenkool bestaan uit saamgeperste plantmateriaal en sediment. Bladsy 86',
+      difficulty: 'easy',
+      page: '86'
+    },
+    {
+      id: 'NW_U5_005',
+      unit: 'Sedimentêre gesteentes: Hoofeienskappe',
+      question: 'Hoe breek skalie af?',
+      type: 'multiple_choice',
+      options: ['In lang, plat stukke rots', 'In ronde stukkies', 'Dit breek nie', 'In baie klein stukkies'],
+      correctAnswer: 'In lang, plat stukke rots',
+      explanation: 'Skalie breek af in lang, plat stukke rots. Bladsy 86',
+      difficulty: 'medium',
+      page: '86'
+    },
+    {
+      id: 'NW_U5_006',
+      unit: 'Sedimentêre gesteentes: Hoofeienskappe',
+      question: 'Sommige sedimentêre gesteentes bestaan uit korrels.',
+      type: 'true_false',
+      correctAnswer: true,
+      explanation: 'Waar! Sommige sedimentêre gesteentes bestaan uit korrels - stukkies rots, minerale en fossiele wat in lae saamgepers is. Bladsy 86',
+      difficulty: 'easy',
+      page: '86'
+    },
+    {
+      id: 'NW_U5_007',
+      unit: 'Sedimentêre gesteentes: Hoofeienskappe',
+      question: 'Hoe word kristalle in sedimentêre gesteentes gevorm?',
+      type: 'multiple_choice',
+      options: [
+        'Deur \'n chemiese reaksie tussen minerale in die sediment en water',
+        'Deur hitte',
+        'Deur druk',
+        'Deur wind'
+      ],
+      correctAnswer: 'Deur \'n chemiese reaksie tussen minerale in die sediment en water',
+      explanation: 'Die kristalle word deur \'n chemiese reaksie tussen die minerale in die sediment en water gevorm. Bladsy 86',
+      difficulty: 'medium',
+      page: '86'
+    },
+    {
+      id: 'NW_U5_008',
+      unit: 'Sedimentêre gesteentes: Hoofeienskappe',
+      question: 'Skalie word uit verharde klei gevorm.',
+      type: 'true_false',
+      correctAnswer: true,
+      explanation: 'Waar! Skalie word uit verharde klei gevorm. Bladsy 86',
+      difficulty: 'easy',
+      page: '86'
+    }
+  ],
+
+  // Unit 6: Uses of sedimentary rocks
+  unit6: [
+    {
+      id: 'NW_U6_001',
+      unit: '\'n Paar gebruike van sedimentêre gesteentes',
+      question: 'Waarvoor word sandsteen gebruik? (Kies al wat van toepassing is)',
+      type: 'multiple_select',
+      options: ['Glasware maak', 'Kaggels en mure bou', 'Vloerstene', 'Eet'],
+      correctAnswers: ['Glasware maak', 'Kaggels en mure bou', 'Vloerstene'],
+      explanation: 'Sandsteen word gebruik vir glasware, kaggels, mure, vloerstene en plaveisel. Bladsy 88',
+      difficulty: 'medium',
+      page: '88'
+    },
+    {
+      id: 'NW_U6_002',
+      unit: '\'n Paar gebruike van sedimentêre gesteentes',
+      question: 'Watter nasionale park is bekend vir lieflike sandsteenberge?',
+      type: 'multiple_choice',
+      options: ['Golden Gate Hoogland Nasionale Park', 'Kruger Nasionale Park', 'Tafelberg Nasionale Park', 'Addo Olifant Park'],
+      correctAnswer: 'Golden Gate Hoogland Nasionale Park',
+      explanation: 'Die Golden Gate Hoogland Nasionale Park in die Vrystaat is bekend vir lieflike sandsteenberge. Bladsy 88',
+      difficulty: 'medium',
+      page: '88'
+    },
+    {
+      id: 'NW_U6_003',
+      unit: '\'n Paar gebruike van sedimentêre gesteentes',
+      question: 'Waarvoor word skalie gebruik? (Kies al wat van toepassing is)',
+      type: 'multiple_select',
+      options: ['Vulstof in verf', 'Dakstene', 'Bron van natuurlike gas', 'Kos'],
+      correctAnswers: ['Vulstof in verf', 'Dakstene', 'Bron van natuurlike gas'],
+      explanation: 'Skalie word gebruik as vulstof in verf, dakstene, grondstof vir stene en as bron van natuurlike gas. Bladsy 88',
+      difficulty: 'medium',
+      page: '88'
+    },
+    {
+      id: 'NW_U6_004',
+      unit: '\'n Paar gebruike van sedimentêre gesteentes',
+      question: 'Suid-Afrika het die vyfde grootste skaliegasreserwes ter wêreld.',
+      type: 'true_false',
+      correctAnswer: true,
+      explanation: 'Waar! Daar word gesê dat Suid-Afrika die vyfde grootste skaliegasreserwes ter wêreld het. Bladsy 88',
+      difficulty: 'medium',
+      page: '88'
+    },
+    {
+      id: 'NW_U6_005',
+      unit: '\'n Paar gebruike van sedimentêre gesteentes',
+      question: 'Waar lê Suid-Afrika se skaliegasreserwes?',
+      type: 'multiple_choice',
+      options: ['Onder die droë oppervlak van die Karoo', 'In Johannesburg', 'In Kaapstad', 'In Durban'],
+      correctAnswer: 'Onder die droë oppervlak van die Karoo',
+      explanation: 'Onder die droë oppervlak van die Karoo lê rotslae wat skaliegas bevat. Bladsy 88',
+      difficulty: 'medium',
+      page: '88'
+    },
+    {
+      id: 'NW_U6_006',
+      unit: '\'n Paar gebruike van sedimentêre gesteentes',
+      question: 'Waarvoor word kalksteen gebruik? (Kies al wat van toepassing is)',
+      type: 'multiple_select',
+      options: ['Bou van paaie en geboue', 'Portland-sement (PPC)', 'Tandepasta', 'Verf', 'Kos'],
+      correctAnswers: ['Bou van paaie en geboue', 'Portland-sement (PPC)', 'Tandepasta', 'Verf'],
+      explanation: 'Kalksteen word gebruik vir paaie, geboue, sement, tandepasta, medikasie en verf. Bladsy 88',
+      difficulty: 'hard',
+      page: '88'
+    },
+    {
+      id: 'NW_U6_007',
+      unit: '\'n Paar gebruike van sedimentêre gesteentes',
+      question: 'Die Sterkfonteingrotte is kalksteen grotte van spesiale belang in Gauteng.',
+      type: 'true_false',
+      correctAnswer: true,
+      explanation: 'Waar! Die Sterkfonteingrotte is kalksteen grotte van spesiale belang in Gauteng. Bladsy 88',
+      difficulty: 'easy',
+      page: '88'
+    },
+    {
+      id: 'NW_U6_008',
+      unit: '\'n Paar gebruike van sedimentêre gesteentes',
+      question: 'Waarom is kalksteen die beste materiaal vir die preservering van bene?',
+      type: 'multiple_choice',
+      options: ['Dit is hard en beskerm bene goed', 'Dit is sag', 'Dit is warm', 'Dit is nat'],
+      correctAnswer: 'Dit is hard en beskerm bene goed',
+      explanation: 'Kalksteen is die beste materiaal vir die preservering van bene. Bladsy 88',
+      difficulty: 'medium',
+      page: '88'
+    }
+  ],
+
+  // Unit 7: Fossiele in rotse
+  unit7: [
+    {
+      id: 'NW_U7_001',
+      unit: 'Fossiele in rotse',
+      question: 'Wat is fossiele?',
+      type: 'multiple_choice',
+      options: [
+        'Oorblyfsels van plante en diere wat lank gelede dood is',
+        'Nuwe diere',
+        'Lewende plante',
+        'Moderne klippe'
+      ],
+      correctAnswer: 'Oorblyfsels van plante en diere wat lank gelede dood is',
+      explanation: 'Fossiele is oorblyfsels van plante en diere wat lank gelede dood is, wat dikwels in gesteentes gevind word. Bladsy 89-90',
+      difficulty: 'easy',
+      page: '89-90'
+    },
+    {
+      id: 'NW_U7_002',
+      unit: 'Fossiele in rotse',
+      question: 'Hoe oud is die oudste fossiele van eenvoudige organismes soos bakterieë en alge?',
+      type: 'multiple_choice',
+      options: ['600 miljoen jaar', 'Biljoene jare', '300 miljoen jaar', '100 miljoen jaar'],
+      correctAnswer: 'Biljoene jare',
+      explanation: 'Die oudste fossiele van eenvoudige organismes soos bakterieë en alge het biljoene jare gelede gelewe. Bladsy 89-90',
+      difficulty: 'medium',
+      page: '89-90'
+    },
+    {
+      id: 'NW_U7_003',
+      unit: 'Fossiele in rotse',
+      question: 'Wanneer het diere met skelette en harde skulpe verskyn?',
+      type: 'multiple_choice',
+      options: ['Ongeveer 600 miljoen jaar gelede', 'Ongeveer 100 miljoen jaar gelede', 'Ongeveer 1 biljoen jaar gelede', 'Ongeveer 50 miljoen jaar gelede'],
+      correctAnswer: 'Ongeveer 600 miljoen jaar gelede',
+      explanation: 'Daar is fossiele gevind wat 600 miljoen jaar oud is. In hierdie tyd het diere met skelette en harde skulpe verskyn. Bladsy 89-90',
+      difficulty: 'medium',
+      page: '89-90'
+    },
+    {
+      id: 'NW_U7_004',
+      unit: 'Fossiele in rotse',
+      question: 'Gesteentes wat ongeveer 300 miljoen jaar oud is, bevat watter soorte fossiele? (Kies al wat van toepassing is)',
+      type: 'multiple_select',
+      options: ['Seeperdjies', 'Tiere', 'Voëls', 'Dinosaurusse', 'Naaldekokers', 'Blomme'],
+      correctAnswers: ['Seeperdjies', 'Tiere', 'Voëls', 'Dinosaurusse', 'Naaldekokers', 'Blomme'],
+      explanation: 'Gesteentes wat ongeveer 300 miljoen jaar oud is, bevat verskillende soorte plant- en dierfossiele. Bladsy 89-90',
+      difficulty: 'hard',
+      page: '89-90'
+    },
+    {
+      id: 'NW_U7_005',
+      unit: 'Fossiele in rotse',
+      question: 'Plante en diere in droë gebiede vorm nie so dikwels fossiele soos dié in vogtige plekke of water nie.',
+      type: 'true_false',
+      correctAnswer: true,
+      explanation: 'Waar! Plante en diere in droë gebiede vorm nie so dikwels fossiele nie. Bladsy 89-90',
+      difficulty: 'easy',
+      page: '89-90'
+    },
+    {
+      id: 'NW_U7_006',
+      unit: 'Fossiele in rotse',
+      question: 'Die onderste sedimentêre gesteentes is die _____.',
+      type: 'multiple_choice',
+      options: ['oudste', 'jongste', 'grootste', 'kleinste'],
+      correctAnswer: 'oudste',
+      explanation: 'Die onderste sedimentêre gesteentes is die oudste. Bladsy 89-90',
+      difficulty: 'medium',
+      page: '89-90'
+    },
+    {
+      id: 'NW_U7_007',
+      unit: 'Fossiele in rotse',
+      question: 'Wat kan wetenskaplikes, geoloë en argeoloë uitvind deur gesteentes te bestudeer? (Kies al wat van toepassing is)',
+      type: 'multiple_select',
+      options: [
+        'Hoe oud die gesteentes is',
+        'Hoe oud die fossiele is',
+        'Watter diere en plante gedurende \'n sekere tydperk geleef het',
+        'Hoe groot hulle was',
+        'Of hulle uitgestert het'
+      ],
+      correctAnswers: [
+        'Hoe oud die gesteentes is',
+        'Hoe oud die fossiele is',
+        'Watter diere en plante gedurende \'n sekere tydperk geleef het',
+        'Hoe groot hulle was',
+        'Of hulle uitgestert het'
+      ],
+      explanation: 'Deur gesteentes te bestudeer kan wetenskaplikes al hierdie dinge uitvind. Bladsy 89-90',
+      difficulty: 'hard',
+      page: '89-90'
+    },
+    {
+      id: 'NW_U7_008',
+      unit: 'Fossiele in rotse',
+      question: 'Om \'n goeie fossiel te vorm, moet die organisme gou na sy dood met sand of modder bedek word.',
+      type: 'true_false',
+      correctAnswer: true,
+      explanation: 'Waar! Anders sal die oorskot verrot of deur ander diere geëet word. Bladsy 89-90',
+      difficulty: 'easy',
+      page: '89-90'
+    },
+    {
+      id: 'NW_U7_009',
+      unit: 'Fossiele in rotse',
+      question: 'Watter dele van \'n plant of dier bly gewoonlik oor as fossiele?',
+      type: 'multiple_choice',
+      options: [
+        'Die sagte dele',
+        'Slegs die tande, skulpe, bene en hout',
+        'Die vel',
+        'Die spiere'
+      ],
+      correctAnswer: 'Slegs die tande, skulpe, bene en hout',
+      explanation: 'Die sagte dele verdwyn. Slegs die tande, skulpe en bene van diere en die hout van plante bly gewoonlik oor. Bladsy 89-90',
+      difficulty: 'medium',
+      page: '89-90'
+    },
+    {
+      id: 'NW_U7_010',
+      unit: 'Fossiele in rotse',
+      question: 'Wat is \'n gietvorm?',
+      type: 'multiple_choice',
+      options: [
+        'Wanneer die skulp of bene oplos en slegs \'n holte oorbly',
+        '\'n Volledige fossiel',
+        '\'n Soort rots',
+        '\'n Dier'
+      ],
+      correctAnswer: 'Wanneer die skulp of bene oplos en slegs \'n holte oorbly',
+      explanation: 'By sekere soorte fossiele los die skulp of bene op en dan kan slegs \'n holte, wat ons \'n gietvorm noem, gesien word. Bladsy 89-90',
+      difficulty: 'hard',
+      page: '89-90'
+    }
+  ],
+
+  // Unit 8: Liggaams- en spoorfossiele (Body and Trace Fossils) - THIS IS THE MISSING UNIT!
+  unit8: [
+    {
+      id: 'NW_U8_001',
+      unit: 'Liggaams- en spoorfossiele',
+      question: 'Wat is liggaamsfossiele?',
+      type: 'multiple_choice',
+      options: [
+        'Fossiele uit die harde dele van dier- of plantliggame gevorm',
+        'Spore wat deur diere-aktiwiteit agtergelaat word',
+        'Fossiele van voetspore',
+        'Fossiele van eiers'
+      ],
+      correctAnswer: 'Fossiele uit die harde dele van dier- of plantliggame gevorm',
+      explanation: 'Liggaamsfossiele is uit die harde dele van dier- of plantliggame gevorm. Bladsy 91-93',
+      difficulty: 'easy',
+      page: '91-93'
+    },
+    {
+      id: 'NW_U8_002',
+      unit: 'Liggaams- en spoorfossiele',
+      question: 'Watter van die volgende is voorbeelde van liggaamsfossiele? (Kies al wat van toepassing is)',
+      type: 'multiple_select',
+      options: ['Bene', 'Tande', 'Kloue', 'Blare', 'Stamme', 'Voetspore', 'Eiers'],
+      correctAnswers: ['Bene', 'Tande', 'Kloue', 'Blare', 'Stamme'],
+      explanation: 'Liggaamsfossiele sluit bene, tande, kloue, blare, stamme, vel, embrio\'s en sade in. Voetspore en eiers is spoorfossiele. Bladsy 91-93',
+      difficulty: 'medium',
+      page: '91-93'
+    },
+    {
+      id: 'NW_U8_003',
+      unit: 'Liggaams- en spoorfossiele',
+      question: 'Wat is spoorfossiele?',
+      type: 'multiple_choice',
+      options: [
+        'Fossiele gevorm van spore wat deur diere-aktiwiteit agtergelaat word',
+        'Fossiele van hele diere',
+        'Fossiele van plante',
+        'Fossiele van bene'
+      ],
+      correctAnswer: 'Fossiele gevorm van spore wat deur diere-aktiwiteit agtergelaat word',
+      explanation: 'Spoorfossiele word gevorm van spore wat deur diere-aktiwiteit agtergelaat word (voetspore, tandmerke, neste, eiers). Bladsy 91-93',
+      difficulty: 'easy',
+      page: '91-93'
+    },
+    {
+      id: 'NW_U8_004',
+      unit: 'Liggaams- en spoorfossiele',
+      question: 'Watter van die volgende is voorbeelde van spoorfossiele? (Kies al wat van toepassing is)',
+      type: 'multiple_select',
+      options: ['Voetspore', 'Tandmerke', 'Neste', 'Eiers', 'Uitskeidings', 'Bene', 'Tande'],
+      correctAnswers: ['Voetspore', 'Tandmerke', 'Neste', 'Eiers', 'Uitskeidings'],
+      explanation: 'Spoorfossiele sluit voetspore, tandmerke, neste, eiers en uitskeidings in. Bladsy 91-93',
+      difficulty: 'medium',
+      page: '91-93'
+    },
+    {
+      id: 'NW_U8_005',
+      unit: 'Liggaams- en spoorfossiele',
+      question: 'Watter liggaamsdele vorm die beste fossiele?',
+      type: 'multiple_choice',
+      options: ['Die sagte dele', 'Die hardste dele soos bene en tande', 'Die vel', 'Die hare'],
+      correctAnswer: 'Die hardste dele soos bene en tande',
+      explanation: 'Die liggaamsfossiele wat die beste behoue bly, is fossiele van die hardste liggaamsdele. Bladsy 91-93',
+      difficulty: 'easy',
+      page: '91-93'
+    },
+    {
+      id: 'NW_U8_006',
+      unit: 'Liggaams- en spoorfossiele',
+      question: 'Wat is die algemeenste liggaamsfossiele wat opgespoor word?',
+      type: 'multiple_choice',
+      options: ['Tande', 'Bene', 'Skulpe', 'Blare'],
+      correctAnswer: 'Bene',
+      explanation: 'Bene is die algemeenste liggaamsfossiele wat opgespoor word. Bladsy 91-93',
+      difficulty: 'easy',
+      page: '91-93'
+    },
+    {
+      id: 'NW_U8_007',
+      unit: 'Liggaams- en spoorfossiele',
+      question: 'Wat is die algemeenste soort spoorfossiel?',
+      type: 'multiple_choice',
+      options: ['Eiers', 'Neste', 'Voetspore', 'Uitskeidings'],
+      correctAnswer: 'Voetspore',
+      explanation: 'Die algemeenste soort spoorfossiel is voetspore. Bladsy 91-93',
+      difficulty: 'easy',
+      page: '91-93'
+    },
+    {
+      id: 'NW_U8_008',
+      unit: 'Liggaams- en spoorfossiele',
+      question: 'Spoorfossiele is baie nuttig omdat dit leidrade oor dierelewe van baie jare gelede verskaf.',
+      type: 'true_false',
+      correctAnswer: true,
+      explanation: 'Waar! Spoorfossiele is baie nuttig omdat dit leidrade oor dierelewe van baie jare gelede verskaf. Bladsy 91-93',
+      difficulty: 'easy',
+      page: '91-93'
+    },
+    {
+      id: 'NW_U8_009',
+      unit: 'Liggaams- en spoorfossiele',
+      question: 'Liggaamsfossiele wys ons hoe \'n plant of dier baie jare gelede gelyk het.',
+      type: 'true_false',
+      correctAnswer: true,
+      explanation: 'Waar! Liggaamsfossiele wys ons hoe \'n plant of dier baie jare gelede gelyk het. Bladsy 91-93',
+      difficulty: 'easy',
+      page: '91-93'
+    },
+    {
+      id: 'NW_U8_010',
+      unit: 'Liggaams- en spoorfossiele',
+      question: 'Klassifiseer die volgende as liggaamsfossiel (L) of spoorfossiel (S): voetspoor',
+      type: 'multiple_choice',
+      options: ['Liggaamsfossiel', 'Spoorfossiel'],
+      correctAnswer: 'Spoorfossiel',
+      explanation: 'Voetspore is spoorfossiele omdat dit spore is wat deur diere-aktiwiteit agtergelaat word. Bladsy 91-93',
+      difficulty: 'easy',
+      page: '91-93'
+    }
+  ],
+
+  // Unit 9: Die belangrikheid van Suid-Afrikaanse fossiele
+  unit9: [
+    {
+      id: 'NW_U9_001',
+      unit: 'Die belangrikheid van Suid-Afrikaanse fossiele',
+      question: 'Suid-Afrika het een van die grootste fossielversamelings ter wêreld.',
+      type: 'true_false',
+      correctAnswer: true,
+      explanation: 'Waar! Suid-Afrika het een van die grootste fossielversamelings ter wêreld. Bladsy 94-95',
+      difficulty: 'easy',
+      page: '94-95'
+    },
+    {
+      id: 'NW_U9_002',
+      unit: 'Die belangrikheid van Suid-Afrikaanse fossiele',
+      question: 'Waarom word Afrika die "Wieg van die Mensdom" genoem?',
+      type: 'multiple_choice',
+      options: [
+        'Omdat dit ryk aan fossielskatte is',
+        'Omdat dit die grootste kontinent is',
+        'Omdat dit warm is',
+        'Omdat dit baie mense het'
+      ],
+      correctAnswer: 'Omdat dit ryk aan fossielskatte is',
+      explanation: 'Suid-Afrika en ander dele van Afrika is ryk aan fossielskatte, daarom word ons kontinent die "Wieg van die Mensdom" genoem. Bladsy 94-95',
+      difficulty: 'medium',
+      page: '94-95'
+    },
+    {
+      id: 'NW_U9_003',
+      unit: 'Die belangrikheid van Suid-Afrikaanse fossiele',
+      question: 'Waar word Suid-Afrika se oudste rotse meestal aangetref?',
+      type: 'multiple_choice',
+      options: ['Barberton-omgewing', 'Kaapstad', 'Durban', 'Johannesburg'],
+      correctAnswer: 'Barberton-omgewing',
+      explanation: 'In Suid-Afrika se oudste rotse, wat meestal in die Barberton-omgewing aangetref word, is klein fossiele gevind. Bladsy 94-95',
+      difficulty: 'medium',
+      page: '94-95'
+    },
+    {
+      id: 'NW_U9_004',
+      unit: 'Die belangrikheid van Suid-Afrikaanse fossiele',
+      question: 'Hoe oud is die fossiele van alge en bakterieë wat in die Barberton-omgewing gevind is?',
+      type: 'multiple_choice',
+      options: ['Ongeveer 500 miljoen jaar', 'Ongeveer 1 biljoen jaar', 'Ongeveer 3 500 miljoen jaar', 'Ongeveer 100 miljoen jaar'],
+      correctAnswer: 'Ongeveer 3 500 miljoen jaar',
+      explanation: 'Hierdie fossiele bewys dat eenvoudige plante ongeveer 3 500 miljoen jaar gelede in Suid-Afrika gegroei het. Bladsy 94-95',
+      difficulty: 'hard',
+      page: '94-95'
+    },
+    {
+      id: 'NW_U9_005',
+      unit: 'Die belangrikheid van Suid-Afrikaanse fossiele',
+      question: 'Waar is die Sterkfonteingrotte geleë?',
+      type: 'multiple_choice',
+      options: [
+        'In \'n vallei aan die westekant van Johannesburg',
+        'In Kaapstad',
+        'In Durban',
+        'In die Karoo'
+      ],
+      correctAnswer: 'In \'n vallei aan die westekant van Johannesburg',
+      explanation: 'Die Sterkfonteingrotte is geleë in \'n vallei aan die westekant van Johannesburg. Bladsy 94-95',
+      difficulty: 'medium',
+      page: '94-95'
+    },
+    {
+      id: 'NW_U9_006',
+      unit: 'Die belangrikheid van Suid-Afrikaanse fossiele',
+      question: 'Hoe lank gelede het daar al mense in die omgewing van Sterkfontein gewoon?',
+      type: 'multiple_choice',
+      options: ['100 miljoen jaar', '200 miljoen jaar', '300 miljoen jaar', '50 miljoen jaar'],
+      correctAnswer: '300 miljoen jaar',
+      explanation: 'Die fossiele bewys dat daar al 300 miljoen jaar gelede mense in die omgewing gewoon het. Bladsy 94-95',
+      difficulty: 'hard',
+      page: '94-95'
+    },
+    {
+      id: 'NW_U9_007',
+      unit: 'Die belangrikheid van Suid-Afrikaanse fossiele',
+      question: 'Wat is \'n Mesosaurus?',
+      type: 'multiple_choice',
+      options: ['\'n Waterreptiel', '\'n Voël', '\'n Plant', '\'n Insek'],
+      correctAnswer: '\'n Waterreptiel',
+      explanation: 'Wetenskaplikes het fossiele gevind van \'n waterreptiel wat \'n Mesosaurus genoem is. Bladsy 94-95',
+      difficulty: 'medium',
+      page: '94-95'
+    },
+    {
+      id: 'NW_U9_008',
+      unit: 'Die belangrikheid van Suid-Afrikaanse fossiele',
+      question: 'Waar het die vroegste menslike voorouer se versteende voetspore agtergebly?',
+      type: 'multiple_choice',
+      options: ['Langebaan', 'Johannesburg', 'Durban', 'Kaapstad sentrum'],
+      correctAnswer: 'Langebaan',
+      explanation: 'Ongeveer 117 000 jaar gelede het ons eerste menslike voorouer langs \'n strand in Langebaan geloop. Bladsy 94-95',
+      difficulty: 'medium',
+      page: '94-95'
+    },
+    {
+      id: 'NW_U9_009',
+      unit: 'Die belangrikheid van Suid-Afrikaanse fossiele',
+      question: 'Waar kan die oudste versteende voetspore van \'n moderne mens gesien word?',
+      type: 'multiple_choice',
+      options: [
+        'Suid-Afrikaanse Museum in Kaapstad',
+        'Johannesburg Museum',
+        'Durban Museum',
+        'Pretoria Museum'
+      ],
+      correctAnswer: 'Suid-Afrikaanse Museum in Kaapstad',
+      explanation: 'Die versteende voetspore kan vandag in die Suid-Afrikaanse Museum in Kaapstad gesien word. Bladsy 94-95',
+      difficulty: 'medium',
+      page: '94-95'
+    },
+    {
+      id: 'NW_U9_010',
+      unit: 'Die belangrikheid van Suid-Afrikaanse fossiele',
+      question: 'Watter fossiele is in die Weskus Fossielpark gevind? (Kies al wat van toepassing is)',
+      type: 'multiple_select',
+      options: ['Kameelperde', 'Olifante', 'Seekoeie', 'Walvisse', 'Wilde bere'],
+      correctAnswers: ['Kameelperde', 'Olifante', 'Seekoeie', 'Walvisse', 'Wilde bere'],
+      explanation: 'Die Weskus Fossielpark bevat fossiele van kameelperde, olifante, seekoeie, walvisse en uitgestorwe wilde bere. Bladsy 94-95',
+      difficulty: 'hard',
+      page: '94-95'
+    },
+    {
+      id: 'NW_U9_011',
+      unit: 'Die belangrikheid van Suid-Afrikaanse fossiele',
+      question: 'Hoeveel jaar gelede was die Ystydperk?',
+      type: 'multiple_choice',
+      options: ['180 miljoen jaar', '280 miljoen jaar', '380 miljoen jaar', '480 miljoen jaar'],
+      correctAnswer: '280 miljoen jaar',
+      explanation: 'Na die Ystydperk, 280 miljoen jaar gelede, is die grootste deel van Suid-Afrika deur \'n groot binnelandse see bedek. Bladsy 94-95',
+      difficulty: 'hard',
+      page: '94-95'
+    }
+  ],
+
+  // Unit 10: Belangrike Suid-Afrikaanse fossiele
+  unit10: [
+    {
+      id: 'NW_U10_001',
+      unit: 'Belangrike Suid-Afrikaanse fossiele',
+      question: 'Wat was die grootste dinosaurus in suidelike Afrika?',
+      type: 'multiple_choice',
+      options: ['Brontosaurus', 'Tyrannosaurus Rex', 'Triceratops', 'Velociraptor'],
+      correctAnswer: 'Brontosaurus',
+      explanation: 'Die grootste dinosaurus in suidelike Afrika was die plantetende Brontosaurus (ook bekend as Apatosaurus). Bladsy 96-97',
+      difficulty: 'easy',
+      page: '96-97'
+    },
+    {
+      id: 'NW_U10_002',
+      unit: 'Belangrike Suid-Afrikaanse fossiele',
+      question: 'Waar is fossiele van die Brontosaurus gevind?',
+      type: 'multiple_choice',
+      options: ['Oos-Kaap', 'Wes-Kaap', 'Gauteng', 'KwaZulu-Natal'],
+      correctAnswer: 'Oos-Kaap',
+      explanation: 'Fossiele van die Brontosaurus is in die Oos-Kaap gevind. Bladsy 96-97',
+      difficulty: 'medium',
+      page: '96-97'
+    },
+    {
+      id: 'NW_U10_003',
+      unit: 'Belangrike Suid-Afrikaanse fossiele',
+      question: 'Hoe lank was die Brontosaurus?',
+      type: 'multiple_choice',
+      options: ['8 meter', '10 meter', '12 meter', '15 meter'],
+      correctAnswer: '12 meter',
+      explanation: 'Daar word gesê dat die Brontosaurus 12 meter lank was. Bladsy 96-97',
+      difficulty: 'medium',
+      page: '96-97'
+    },
+    {
+      id: 'NW_U10_004',
+      unit: 'Belangrike Suid-Afrikaanse fossiele',
+      question: 'Wat beteken die naam Suchomimus?',
+      type: 'multiple_choice',
+      options: ['Krokodil-namaaksel', 'Groot jagter', 'Vinnige renner', 'Sterk dier'],
+      correctAnswer: 'Krokodil-namaaksel',
+      explanation: 'Suchomimus se naam beteken "krokodil-namaaksel". Bladsy 96-97',
+      difficulty: 'hard',
+      page: '96-97'
+    },
+    {
+      id: 'NW_U10_005',
+      unit: 'Belangrike Suid-Afrikaanse fossiele',
+      question: 'Wat staan Afrovenator bekend as?',
+      type: 'multiple_choice',
+      options: ['Die Afrika-jagter', 'Die groot dier', 'Die vinnige renner', 'Die sterk een'],
+      correctAnswer: 'Die Afrika-jagter',
+      explanation: 'Afrovenator staan bekend as die Afrika-jagter. Bladsy 96-97',
+      difficulty: 'medium',
+      page: '96-97'
+    },
+    {
+      id: 'NW_U10_006',
+      unit: 'Belangrike Suid-Afrikaanse fossiele',
+      question: 'Heterodontosaurus het \'n eienaardige stel tande gehad wat dit \'n omnivoor gemaak het.',
+      type: 'true_false',
+      correctAnswer: true,
+      explanation: 'Waar! Van die tande was aangepas om deur vleis te sny en ander om plante te maal. Dit sê vir ons dat die Heterodontosaurus \'n omnivoor was (het vleis en plante geëet). Bladsy 96-97',
+      difficulty: 'hard',
+      page: '96-97'
+    },
+    {
+      id: 'NW_U10_007',
+      unit: 'Belangrike Suid-Afrikaanse fossiele',
+      question: 'Wie het Australopithecus sediba ontdek?',
+      type: 'multiple_choice',
+      options: ['Dr Lee Berger', 'Dr Robert Broom', 'Dr Raymond Dart', 'Dr Phillip Tobias'],
+      correctAnswer: 'Dr Lee Berger',
+      explanation: 'Dr Lee Berger het die mees onlangse ontdekking gemaak toe hy Australopithecus sediba ontdek het. Bladsy 96-97',
+      difficulty: 'medium',
+      page: '96-97'
+    },
+    {
+      id: 'NW_U10_008',
+      unit: 'Belangrike Suid-Afrikaanse fossiele',
+      question: 'Die selakant staan bekend as \'n "lewende fossiel".',
+      type: 'true_false',
+      correctAnswer: true,
+      explanation: 'Waar! Die selakant is \'n unieke vis en staan as \'n "lewende fossiel" bekend. Bladsy 96-97',
+      difficulty: 'easy',
+      page: '96-97'
+    },
+    {
+      id: 'NW_U10_009',
+      unit: 'Belangrike Suid-Afrikaanse fossiele',
+      question: 'Wanneer is die eerste lewende selakant ontdek?',
+      type: 'multiple_choice',
+      options: ['1928', '1938', '1948', '1958'],
+      correctAnswer: '1938',
+      explanation: 'Vissermanne het in 1938 \'n lewende selakant gevang. Bladsy 96-97',
+      difficulty: 'medium',
+      page: '96-97'
+    },
+    {
+      id: 'NW_U10_010',
+      unit: 'Belangrike Suid-Afrikaanse fossiele',
+      question: 'Waar is die lewende selakant in 1938 gevang?',
+      type: 'multiple_choice',
+      options: ['Langs die kus van Oos-Londen', 'In Durban', 'In Kaapstad', 'In Port Elizabeth'],
+      correctAnswer: 'Langs die kus van Oos-Londen',
+      explanation: 'Vissermanne langs die kus van Oos-Londen het in 1938 \'n vis gevang wat as \'n selakant geïdentifiseer is. Bladsy 96-97',
+      difficulty: 'medium',
+      page: '96-97'
+    },
+    {
+      id: 'NW_U10_011',
+      unit: 'Belangrike Suid-Afrikaanse fossiele',
+      question: 'Hoeveel selakante is in Suid-Afrika ontdek?',
+      type: 'multiple_choice',
+      options: ['8', '12', '18', '25'],
+      correctAnswer: '18',
+      explanation: 'Hoewel slegs 18 selakante sover in Suid-Afrika ontdek is - almal in die Sodwana-gebied. Bladsy 96-97',
+      difficulty: 'hard',
+      page: '96-97'
+    },
+    {
+      id: 'NW_U10_012',
+      unit: 'Belangrike Suid-Afrikaanse fossiele',
+      question: 'Op watter diepte is die selakant by Sodwana opgespoor?',
+      type: 'multiple_choice',
+      options: ['34 meter', '54 meter', '74 meter', '94 meter'],
+      correctAnswer: '54 meter',
+      explanation: 'Die vis is op die ongewone diepte van 54 meter gevind - wat vlak is vir selakante. Bladsy 96-97',
+      difficulty: 'hard',
+      page: '96-97'
+    }
   ]
 };
 
