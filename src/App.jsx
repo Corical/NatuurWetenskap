@@ -7,7 +7,7 @@ const NatuurwetenskappeQuiz = () => {
   const [selectedUnits, setSelectedUnits] = useState([]);
   const [difficulty, setDifficulty] = useState('mixed');
   const [questionCount, setQuestionCount] = useState(10);
-  const [includeWebQuestions, setIncludeWebQuestions] = useState(false);
+  const [webQuestionCount, setWebQuestionCount] = useState(0);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState({});
   const [quizQuestions, setQuizQuestions] = useState([]);
@@ -465,8 +465,8 @@ const NatuurwetenskappeQuiz = () => {
       }
     });
 
-    // Add web questions if selected
-    if (includeWebQuestions) {
+    // Add web questions if count is set
+    if (webQuestionCount > 0) {
       const relevantWebQuestions = webQuestions.filter(q => {
         // Only include web questions for selected units
         return selectedUnits.some(unitId => {
@@ -474,7 +474,13 @@ const NatuurwetenskappeQuiz = () => {
           return unit && q.unit.includes(unit.title);
         });
       });
-      allQuestions.push(...relevantWebQuestions);
+      // Shuffle and take the requested number of web questions
+      const shuffledWebQuestions = [...relevantWebQuestions];
+      for (let i = shuffledWebQuestions.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffledWebQuestions[i], shuffledWebQuestions[j]] = [shuffledWebQuestions[j], shuffledWebQuestions[i]];
+      }
+      allQuestions.push(...shuffledWebQuestions.slice(0, Math.min(webQuestionCount, shuffledWebQuestions.length)));
     }
 
     // Filter by difficulty
@@ -640,27 +646,30 @@ const NatuurwetenskappeQuiz = () => {
                 <input
                   type="range"
                   min="5"
-                  max="20"
+                  max="100"
                   value={questionCount}
                   onChange={(e) => setQuestionCount(parseInt(e.target.value))}
                   className="w-full"
                 />
               </div>
 
-              {/* Web Questions Toggle */}
+              {/* Web Questions Count */}
               <div className="bg-blue-50 p-4 rounded-lg">
-                <label className="flex items-center space-x-3 cursor-pointer">
-                  <input
-                    type="checkbox"
-                    checked={includeWebQuestions}
-                    onChange={(e) => setIncludeWebQuestions(e.target.checked)}
-                    className="w-5 h-5 text-blue-600"
-                  />
-                  <div>
-                    <span className="font-medium">Sluit internet vrae in</span>
-                    <p className="text-sm text-gray-600">Voeg 10 addisionele vrae van die internet by</p>
-                  </div>
-                </label>
+                <h2 className="text-xl font-semibold mb-3">
+                  Internet Vrae: {webQuestionCount}
+                  {webQuestionCount > 0 && <span className="text-sm font-normal text-gray-600 ml-2">(van die internet)</span>}
+                </h2>
+                <input
+                  type="range"
+                  min="0"
+                  max="50"
+                  value={webQuestionCount}
+                  onChange={(e) => setWebQuestionCount(parseInt(e.target.value))}
+                  className="w-full"
+                />
+                <p className="text-sm text-gray-600 mt-2">
+                  Stel op 0 vir slegs handboek vrae, of kies hoeveel internet vrae jy wil byvoeg
+                </p>
               </div>
 
               {/* Start Button */}
@@ -702,9 +711,21 @@ const NatuurwetenskappeQuiz = () => {
 
             {/* Question */}
             <div className="mb-6">
-              <h2 className="text-2xl font-bold mb-4">{currentQuestion.question}</h2>
+              <div className="flex items-start gap-3 mb-4">
+                <h2 className="text-2xl font-bold flex-1">{currentQuestion.question}</h2>
+                {currentQuestion.source === 'web' && (
+                  <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-purple-100 text-purple-800 border border-purple-300 whitespace-nowrap">
+                    🌐 Internet
+                  </span>
+                )}
+              </div>
               {currentQuestion.type === 'multiple_select' && (
                 <p className="text-sm text-gray-600 italic">Kies al wat van toepassing is</p>
+              )}
+              {currentQuestion.source === 'web' && (
+                <p className="text-xs text-purple-600 italic mt-2">
+                  Hierdie vraag kom van die internet, nie uit die handboek nie
+                </p>
               )}
             </div>
 
@@ -847,7 +868,14 @@ const NatuurwetenskappeQuiz = () => {
                           <XCircle className="w-6 h-6 text-red-600 flex-shrink-0 mt-1" />
                         )}
                         <div className="flex-1">
-                          <p className="font-bold mb-2">Vraag {idx + 1}: {q.question}</p>
+                          <div className="flex items-start gap-2 mb-2">
+                            <p className="font-bold flex-1">Vraag {idx + 1}: {q.question}</p>
+                            {q.source === 'web' && (
+                              <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-purple-100 text-purple-800 border border-purple-300 whitespace-nowrap">
+                                🌐 Internet
+                              </span>
+                            )}
+                          </div>
                           <p className="text-sm mb-1">
                             <span className="font-semibold">Jou antwoord: </span>
                             {q.type === 'multiple_select'
@@ -903,10 +931,10 @@ const NatuurwetenskappeQuiz = () => {
               <p className="text-lg mt-4 text-gray-700">{gradeInfo.message}</p>
             </div>
 
-            {includeWebQuestions && (
-              <div className="bg-blue-50 p-4 rounded-lg mb-6">
+            {webQuestionCount > 0 && (
+              <div className="bg-purple-50 p-4 rounded-lg mb-6 border border-purple-200">
                 <p className="text-sm text-gray-700">
-                  Hierdie toets het internet vrae ingesluit
+                  🌐 Hierdie toets het <span className="font-semibold">{quizQuestions.filter(q => q.source === 'web').length}</span> internet vra{quizQuestions.filter(q => q.source === 'web').length === 1 ? 'ag' : 'e'} ingesluit
                 </p>
               </div>
             )}
