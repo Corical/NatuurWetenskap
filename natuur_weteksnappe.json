@@ -1,0 +1,1357 @@
+{
+  "curriculum": {
+    "subject": "Natuurwetenskappe en Tegnologie",
+    "grade": "Graad 5",
+    "quarter": "Kwartaal 4",
+    "publisher": "Pearson",
+    "series": "Kollig Op"
+  },
+  
+  "units": [
+    {
+      "unit_id": "eenheid_1",
+      "unit_number": 1,
+      "title": "Die aarde beweeg",
+      "weeks": "Week 1",
+      "pages": "74-75",
+      "topic_category": "aarde",
+      
+      "key_concepts": {
+        "aarde_basiese_feite": {
+          "age_years": 4600000000,
+          "position_from_sun": 3,
+          "size_ranking": 5,
+          "description": "Die vyfde grootste planeet in die sonnestelsel",
+          "shape": "rond",
+          "formation": "Uit rots gevorm",
+          "surface_coverage": "Ongeveer driekwart van die aarde se oppervlak word deur water bedek"
+        },
+        
+        "wentelbaan": {
+          "orbit_type": "wentelbaan",
+          "orbit_path": "baan om die son",
+          "orbit_duration_days": 365,
+          "orbit_description": "Die aarde beweeg in 'n baan om die son. Dit neem 'n hele jaar om om die son te wentel. Een jaar op aarde is 365 dae lank."
+        },
+        
+        "rotasie": {
+          "rotation_duration_hours": 24,
+          "rotation_axis": "Die aarde se as is effens gekantel",
+          "rotation_description": "Die aarde draai om sy eie as as 'n draaitol",
+          "day_night_cause": "Wanneer die aarde om hierdie denkbeeldige as draai, noem ons dit rotasie. Dit neem die aarde een dag om rondom sy as te roteer. Daglig kom van die son af wanneer die dele van die draaiende aarde waarop die son skyn, verlig word. Die deel van die aarde wat weg van die die son af wys, is in die donker."
+        },
+        
+        "son_energy": {
+          "description": "Die son se strale verskaf energie om die aarde te verwarm, veral naby die ewenaar",
+          "equator_info": "Die noordelike deel van Suid-Afrika, wat nader aan die ewenaar is, is warmer as die suidelike deel",
+          "poles_info": "Die poolstreke, wat ver van die ewenaar is, is koud"
+        }
+      },
+      
+      "activities": [
+        {
+          "activity_id": "aktiviteit_1.1",
+          "title": "Bespreek die son en die aarde",
+          "duration_minutes": 45,
+          "questions": [
+            "Hoe lank neem dit die aarde om rondom sy eie as te roteer?",
+            "Hoe lank neem dit die aarde om rondom die son te wentel?",
+            "Wat kry die aarde gedurende die dag van die son?",
+            "Die aarde beweeg op twee maniere: Dit draai eerstens om sy eie as en terselfdertyd _____",
+            "Hoe ver is die aarde van die son af?",
+            "Verduidelik in jou eie woorde wat snags met die sonlig gebeur.",
+            "Teken 'n prent om te illustreer hoe die aarde om die son beweeg."
+          ]
+        }
+      ],
+      
+      "vocabulary": [
+        {
+          "term": "rotasie",
+          "definition": "om gekantelde as draai"
+        },
+        {
+          "term": "wentelbaan",
+          "definition": "baan om die son"
+        },
+        {
+          "term": "ewenaar",
+          "definition": "denkbeeldige lyn in die middel van die aarde"
+        }
+      ]
+    },
+    
+    {
+      "unit_id": "eenheid_2",
+      "unit_number": 2,
+      "title": "Rotse: Grond kom van rotse af",
+      "weeks": "Week 2-4",
+      "pages": "76-77",
+      "topic_category": "grond",
+      
+      "key_concepts": {
+        "oppervlak_samestelling": {
+          "definition": "Die oppervlak van die aarde word die kors genoem en bestaan uit gesteentes en grond",
+          "coverage": "Ons is omring deur gesteentes en grond, wat 'n groot deel van die aarde se oppervlak beslaan",
+          "components": [
+            "gesteentes",
+            "grond",
+            "geboue",
+            "strukture",
+            "paaie",
+            "oseane",
+            "seë",
+            "riviere",
+            "damme",
+            "wateberg"
+          ]
+        },
+        
+        "grondoppervlak_samestelling": {
+          "primary_components": [
+            "gesteentes",
+            "ondergrond",
+            "bogrond"
+          ],
+          "formation": "Die grondoppervlak bestaan uit gesteentes, ondergrond en bogrond. Grond word gevorm wanneer gesteentes oor 'n lang tydperk opbreek en fyn korrels sand word. Dit is soortgelyk aan die kruimels wat vorm wanneer ons 'n brood sny. Bogrond lê op die oppervlak van die grond."
+        },
+        
+        "grond_rol": {
+          "description": "Grond, lug, water en sonlig ondersteun gesamentlik lewe op aarde",
+          "importance": "Hoewel baie van ons nie dink aan die grond onder ons nie, is dit 'n baie belangrike hulpbron vir alle lewende dinge",
+          "uses": [
+            "Grond voorsiening aan baie diere",
+            "soos insekte, wurms, graafdiere, bakterieë, ensovoorts",
+            "Sommige soorte grond, soos bogrond, voorsien die regte voedingstowwe vir plante om te groei",
+            "Die ondergrond kan byvoorbeeld gebruik word om geboue en ander strukture, soos lughawens, paaie en huise te bou",
+            "Ondergrond kan ook gebruik word om alledaagse items, soos glas, te maak"
+          ]
+        }
+      },
+      
+      "vocabulary": [
+        {
+          "term": "ondergrond",
+          "definition": "die laag grond wat onder die bogrond aangetref word, ondergrond kan die volgende insluit: sand, slik en klei"
+        },
+        {
+          "term": "bogrond",
+          "definition": "die boonste laag grond wat baie ryk is aan organiese materie en mikroörganismes; min plantlewe is moontlik sonder bogrond"
+        },
+        {
+          "term": "hulpbron",
+          "definition": "iets wat tot nut van die mens is"
+        },
+        {
+          "term": "bakterieë",
+          "definition": "baie klein lewende organismes; die bakterieë in die grond help om die mis van diere en dooie plant- en dieremateriaal af te breek"
+        },
+        {
+          "term": "voedingstowwe",
+          "definition": "noodsaaklike stowwe vir groei van plante en diere"
+        }
+      ]
+    },
+    
+    {
+      "unit_id": "eenheid_3",
+      "unit_number": 3,
+      "title": "Soorte grond",
+      "weeks": "Week 2-4",
+      "pages": "78-79",
+      "topic_category": "grond",
+      
+      "key_concepts": {
+        "grondtipes": {
+          "count": 3,
+          "types": [
+            {
+              "name": "sandgrond",
+              "order": 1,
+              "properties": {
+                "particle_size": "los en grof",
+                "visibility": "dis maklik om die deeltjies te sien",
+                "water_retention": "water loop maklik en vinnig deur die deeltjies",
+                "warmth": "die son bak sand vinnig warm"
+              },
+              "locations": [
+                "woestyne",
+                "droë rivierbeddings",
+                "strande langs die see"
+              ],
+              "description": "Die eienskappe van sandgrond is: die deeltjies is los en grof, dis maklik om die deeltjies te sien, water loop maklik en vinnig deur die deeltjies, die son bak sand vinnig warm",
+              "uses": [
+                "Dit word dikwels in bouwerk gebruik",
+                "glas word daarvan gemaak",
+                "Sandgrond is ook ideaal om waallermoene, perskes en grondboontjies in te plant"
+              ],
+              "image_references": [
+                "Kalahari-woestyn, Noord-Kaap",
+                "Bloubergstrand, Kaapstad"
+              ]
+            },
+            {
+              "name": "leemgrond",
+              "order": 2,
+              "properties": {
+                "composition": "dit bestaan uit organiese materiaal en 'n mengsel van growwe en fyn deeltjies",
+                "water_retention": "dit hou water vir 'n rukkie totdat die meeste van die water verdamp het",
+                "sun_warmth": "die son kan dit nie so vinnig soos sandgrond warm bak nie",
+                "humus": "dit bevat baie humus en het 'n ryk, donker kleur"
+              },
+              "locations": [
+                "op baie plase",
+                "in vrugbare areas met welige plantegroei"
+              ],
+              "description": "Die eienskappe van leemgrond is: dit bestaan uit organiese materiaal en 'n mengsel van growwe en fyn deeltjies, dit hou water vir 'n rukkie totdat die meeste van die water verdamp het, die son kan dit nie so vinnig soos sandgrond warm bak nie, dit bevat baie humus en het 'n ryk, donker kleur",
+              "quality": "Leemgrond is goeie grond vir koring en mielies om in te groei",
+              "image_references": [
+                "Leemgrond is goeie grond vir koring en mielies om in te groei"
+              ]
+            },
+            {
+              "name": "kleigrond",
+              "order": 3,
+              "properties": {
+                "texture": "dit is nat en klewerig",
+                "particle_size": "die deeltjies kleef aan mekaar wanneer hulle klam is",
+                "water_retention": "dit hou water vir 'n lang tyd",
+                "sun_effect": "dit word nie maklik deur die son warm gebak nie"
+              },
+              "locations": [
+                "langs riviere",
+                "damme",
+                "mere en poeletjies"
+              ],
+              "description": "Die eienskappe van kleigrond is: dit is nat en klewerig, die deeltjies kleef aan mekaar wanneer hulle klam is, dit hou water vir 'n lang tyd, dit word nie maklik deur die son warm gebak nie",
+              "uses": [
+                "Mense in Afrika maak tradisionele potte van klei",
+                "Die potte word in vure gebak en gebruik om graan, water en tradisionele bier in te stoor",
+                "Klei word ook gebruik om huise mee te bou en kunswerke en musiekinstrumente te maak"
+              ],
+              "image_references": [
+                "Klei word gebruik om voorwerpe soos potte te maak"
+              ]
+            }
+          ],
+          "classification_method": "Die volgende word in ag geneem wanneer grond geklassifiseer word: of die gronddeeltjies los van mekaar is en die grond maklik tussen jou vingers deurglip, soos in die geval van sandgrond; of jy die grond in 'n hopie kan rangskik maar dit nie maklik in 'n balletjie kan rol as dit klam is nie, soos in die geval van leemgrond; of jy die grond maklik in 'n balletjie kan rol as dit klam is, soos in die geval van kleigrond"
+        },
+        
+        "grond_bewaring": {
+          "importance": "Grond neem baie lank om in die natuur te vorm. As goeie grond verlore gaan, is dit moeilik om hierdie belangrike hulpbron, wat noodsaaklik is vir die plant- en dierelewe op aarde, te vervang. Dit is dus baie belangrik om grond te bewaar."
+        }
+      },
+      
+      "activities": [
+        {
+          "activity_id": "wetenskaplike_ondersoek_3.1",
+          "title": "Ondersoek verskillende grondsoorte",
+          "duration_minutes": 45,
+          "materials": [
+            "3 klein houertjies om grondmonsters in te sit",
+            "'n grondmonster van drie verskillende plekke"
+          ],
+          "examples": [
+            "'n dam, rivier of poeletjie",
+            "'n groentetuin",
+            "die skool se sandput"
+          ],
+          "steps": [
+            "Nommer die grondmonster 1, 2 of 3",
+            "Teken 'n tabel waarin jy die drie grondsoorte met mekaar kan vergelyk. Gebruik die volgende opskrifte om jou te help: Tekstuur, Voorkoms, Reaksie op water, Reaksie op die son, Gebruike (waarvoor jy dink dit gebruik kan word), Reuk, Kleur"
+          ]
+        },
+        {
+          "activity_id": "wetenskaplike_ondersoek_3.2",
+          "title": "Analiseer metings van hoeveel water verskillende soorte grond kan deurlaat",
+          "duration_minutes": 45,
+          "description": "Gebruik 'n staafgrafiek om die verskillende soorte grond aan te dui asook die resultate wat jy waargeneem het in Formele Assesseringstaak 7. Die staafgrafiek moet wys hoe goed elke soort grond water kan hou.",
+          "questions": [
+            "Teken (tot die naaste 5 minute) op die grafiek aan hoe lank die water geneem het om deur elke grondsoort te loop",
+            "Dink jy 'n boer moet weet watter soort grond water die beste hou en watter water vinniger verloor? Gee redes vir jou antwoord",
+            "Watter grond sou jy gebruik het as jy 'n boer was en jy 'n veld vol mielies wou plant? Gee redes vir jou antwoord",
+            "Kyk na die foto's hieronder. Watter grondsoort sou jy uit jou resultate verwag om in hierdie omgewings te vind?"
+          ],
+          "images": [
+            "Elephant drinking",
+            "Beach scene",
+            "Mountain landscape"
+          ],
+          "final_question": "Gee twee redes waarom dit belangrik is om grond te bewaar"
+        }
+      ],
+      
+      "vocabulary": [
+        {
+          "term": "grof",
+          "definition": "ru"
+        },
+        {
+          "term": "humus",
+          "definition": "die deel van grond wat uit organismes bestaan wat voorheen gelewe het"
+        },
+        {
+          "term": "vrugbare",
+          "definition": "gunstig vir groei"
+        }
+      ]
+    },
+    
+    {
+      "unit_id": "eenheid_4",
+      "unit_number": 4,
+      "title": "Sedimentêre gesteentes: Sedimentasie",
+      "weeks": "Week 4-6",
+      "pages": "82-83",
+      "topic_category": "gesteentes",
+      
+      "key_concepts": {
+        "sedimentere_gesteentes": {
+          "definition": "Sedimentêre gesteentes bedek ongeveer 'n driekwart van die aarde se oppervlak en die grootste deel van die seebodem",
+          "age_estimate": "Geoloë vermoed dat sedimentêre gesteentes al die afgelope drie en 'n half miljard jaar op aarde gevorm word",
+          "formation_time": "Sedimentêre gesteentes word oor 'n baie lang tydperk gevorm"
+        },
+        
+        "vorming_proses": {
+          "description": "Hoe sedimentêre gesteentes gevorm word",
+          "stages": [
+            {
+              "stage": 1,
+              "description": "Toe die aarde miljoene jare gelede gevorm is, was daar geen sedimentêre gesteentes nie. Daar was net vulkaniese gesteentes"
+            },
+            {
+              "stage": 2,
+              "description": "Die natuurlike verweringsprosesse (reën, wind, water) het begin om die vulkaniese gesteentes in kleiner gesteentes op te breek"
+            },
+            {
+              "stage": 3,
+              "description": "Hierdie kleiner gesteentes is in korrels sand en klei opgebreek. Wanneer dit gereën of die wind gewaai het, is die partikels weggespoel of weggewaai. Hulle is oor die aarde se oppervlak na oseane, seë, damme, mere en riviere versprei"
+            },
+            {
+              "stage": 4,
+              "description": "Die modder, sand en sediment is in laagliggende gebiede afgeset"
+            },
+            {
+              "stage": 5,
+              "description": "Die meeste sedimentêre gesteentes word in water gevorm waar die gewig van die water op die lae sand en klei afdruk. Hierdie gewig druk die lae saam en nuwe sedimentêre gesteentes word gevorm"
+            },
+            {
+              "stage": 6,
+              "description": "Soms sit dooie diere en plante tussen die lae vas en só word fossiele gevorm, wat dikwels in sedimentêre gesteentes aangetref word"
+            },
+            {
+              "stage": 7,
+              "description": "Sommige grondpartikels, soos sand, is swaarder as ander en sink vinniger as hulle in water beland. Dit is hoe verskillende soorte sedimentêre gesteentes lae vorm en verskillende teksture het"
+            },
+            {
+              "stage": 8,
+              "description": "Sedimentêre gesteentes word aanhoudend gevorm"
+            }
+          ],
+          "images": [
+            "Die riffelmerkies in die sandsteen is deur wind en water gevorm. Wind en water vervoer sediment regoor die aarde",
+            "Gebarste sediment word gewoonlik op die bodem van droë mere, riviere of dammetjies aangetref. Die sediment is dikwels 'n mengsel van grond, diere, skulpe en plante. Die sediment word saamgepers en vorm 'n saamgepersde sedimentêre gesteentelaag"
+          ]
+        }
+      },
+      
+      "activities": [
+        {
+          "activity_id": "aktiviteit_4.1",
+          "title": "Ondersoek hoe sedimentêre gesteentes gevorm word",
+          "duration_minutes": 30,
+          "materials": [
+            "'n glas water",
+            "'n paar klein, sagte klippies of kluite"
+          ],
+          "steps": [
+            "Gooi 'n paar klein, sagte klippies in 'n glas water",
+            "Kyk hoe die klippies breek en oplos en die sediment op die bodem van die glas gaan lê. Dit is 'n perfekte voorbeeld van hoe sediment in water na die bodem sak. Stel jouself laag op laag sediment voor wat met verloop van tyd saamgepers word en só sedimentêre gesteentes vorm",
+            "Kyk na die foto's van sedimentêre gesteentes in hierdie eenheid. Teken hoe jy dink 'n sedimentêre gesteente lyk en toon ten minste vyf lae wat oor tyd gevorm het. Skryf byskrifte vir die gesteente en verduidelik die vorming daarvan aan 'n maat"
+          ],
+          "images": [
+            "Elke laag sedimentêre gesteentes vertel 'n storie van die aarde se geskiedenis. Hierdie is 'n rots op Tafelberg",
+            "Die riffelmerkies in die sandsteen is deur wind en water gevorm",
+            "Gebarste sediment word gewoonlik op die bodem van droë mere, riviere of dammetjies aangetref"
+          ]
+        },
+        {
+          "activity_id": "aktiviteit_4.2",
+          "title": "Illustreer hoe sedimentêre gesteentes vorm",
+          "duration_minutes": 40,
+          "description": "Gebruik die inligting hieronder om jou eie strokiesprent te teken van gesteentes wat met verloop van tyd in kleiner stukkies opbreek en sedimentêre gesteentes vorm. Die volgende feite moet duidelik geïllustreer word:",
+          "facts_to_illustrate": [
+            "Reën, son en wind begin gesteentes tot kleiner stukkies en partikels afbreek",
+            "Wind en water vervoer hierdie stukkies en partikels na ander gebiede",
+            "Wind en water vervoer hierdie partikels mettertyd na laagliggende gebiede waar sommige in water en ander op land afgeset word",
+            "Met verloop van tyd word nuwe partikels bo-op bestaande lae afgeset",
+            "Na baie jare word hierdie lae saamgepers, verhard en vorm sedimentêre gesteentes"
+          ],
+          "images": [
+            "Sedimentêre gesteentes het sigbare lae",
+            "Sedimentêre gesteentes by Hermanus, Wes-Kaap"
+          ]
+        },
+        {
+          "activity_id": "aktiviteit_4.3",
+          "title": "Interpretasie van die vorming van sedimentêre gesteentes",
+          "duration_minutes": 40,
+          "description": "Beskou elke laag van die sedimentêre gesteente krities. Skryf jou interpretasie van wat jy sien en wat jy dink tot elke laag bygedra het, neer.",
+          "layers": [
+            "laag vier",
+            "laag drie",
+            "laag twee",
+            "laag een"
+          ],
+          "image": "Sedimentêre gesteentelae"
+        }
+      ],
+      
+      "vocabulary": [
+        {
+          "term": "fossiele",
+          "definition": "die oorblyfsels van 'n plant of dier wat lank gelede gelewe het word in die grond behou en kan so hard soos rots word"
+        },
+        {
+          "term": "ingebed",
+          "definition": "om diep in 'n stof begrawe te wees"
+        },
+        {
+          "term": "eras",
+          "definition": "tydperke"
+        }
+      ],
+      
+      "pretfeit": {
+        "title": "Drie en 'n half miljard = 3 500 000 000",
+        "description": "Die pretfeit boks verduidelik die numeriese waarde van 'drie en 'n half miljard'"
+      }
+    },
+    
+    {
+      "unit_id": "eenheid_5",
+      "unit_number": 5,
+      "title": "Sedimentêre gesteentes: Hoofeien skappe van sedimentêre gesteentes",
+      "weeks": "Week 4-6",
+      "pages": "86",
+      "topic_category": "gesteentes",
+      
+      "key_concepts": {
+        "gesteente_tipes": {
+          "description": "Geoloë verdeel sedimentêre gesteentes in groepe. Voorbeelde van sedimentêre gesteentes word in die onderstaande tabel geïllustreer",
+          "types": [
+            {
+              "name": "Sandsteen",
+              "formation": [
+                "Sommige sedimentêre gesteentes bestaan uit 'korrels'",
+                "Die korrel is stukkies rots, minerale en fossiele wat in lae saamgepers is",
+                "Hierdie gesteentes word deur natuurlike verweringsprosesse gevorm wanneer stukkies rots afgebreek word en sediment vorm"
+              ],
+              "appearance": "Sandsteen word gevorm wanneer sanderige sediment saamgepers word en soliede rots vorm",
+              "image": "Rock sample showing sandstone texture"
+            },
+            {
+              "name": "Kalkstee",
+              "formation": [
+                "Sommige sedimentêre gesteentes bestaan uit kristalle",
+                "Die kristalle word deur 'n chemiese reaksie tussen die minerale in die sediment en water gevorm",
+                "Die water verdamp, die minerale en sediment word saamgepers en die kristalle vorm"
+              ],
+              "appearance": "Kalkstee bestaan uit mariene organismes, koraal en skulpe",
+              "image": "Cliff face showing limestone"
+            },
+            {
+              "name": "Steenkool",
+              "formation": [
+                "Sommige sedimentêre gesteentes bestaan uit saamgeperste plantmateriaal en sediment"
+              ],
+              "appearance": "Steenkool bestaan uit plantmateriaal",
+              "image": "Coal sample"
+            },
+            {
+              "name": "Skalie",
+              "formation": [
+                "Sommige sedimentêre gesteentes word uit verharde klei gevorm",
+                "Hierdie gesteentes breek af in lang, plat stukke rots"
+              ],
+              "appearance": "Skalie word gevorm uit verharde klei",
+              "image": "Shale rock sample"
+            }
+          ]
+        }
+      },
+      
+      "activities": [
+        {
+          "activity_id": "aktiviteit_5.1",
+          "title": "Maak jou eie sedimentêre gesteente",
+          "duration_minutes": 60,
+          "prep_time": "plus 'n week se voorbereidingstyd",
+          "safety_note": "Jy moet nommer 2 en 10 onder volwasse toesig doen. Wees versigtig met die skerp kunsmessie. Die rand van die koeldrankbottel kan skerp wees nadat jy dit gesny het. Moenie jaag nie, anders kan jy jouself seermaak. Neem eerder jou tyd en wees geduldig en versigtig",
+          "materials": [
+            "'n deurskynende 2 liter-koeldrankbottel",
+            "'n verskeidenheid klam grondsoorte: klei, sand, leem",
+            "waspapier",
+            "skulpe",
+            "klein gruisklippies",
+            "bene",
+            "ontbindende plantmateriaal",
+            "Polyfilla",
+            "plastieklepeltjies",
+            "Vaseline",
+            "'n kunsmessie",
+            "'n skêr",
+            "'n klein hamertjie",
+            "baie dun stukkies materiaal of gaas",
+            "horlosie met minuutwyser",
+            "grondmonsters van verskillende terreine"
+          ],
+          "ground_samples": [
+            "'n saailand (vir leemgrond)",
+            "'n sandput, strand of rivierloop (vir sandgrond)",
+            "vogtige gebied (vir kleigrond)",
+            "rotsagtige, klipperige pad (vir gruis)"
+          ],
+          "steps": [
+            "Meet en merk 15 cm vanaf die bottel se bodem af",
+            "Gebruik 'n kunsmessie en 'n skêr om die bokant van die koeldrankbottel versigtig af te sny",
+            "Voer die basis van die koeldrankbottel met waspapier uit",
+            "Meng een teelepel Polyfilla met elke laag sediment",
+            "Gebruik sandgrond om die eerste laag te maak",
+            "Plaas jou fossielsstukkies tussen elke sedimentlaag",
+            "Druk elke laag stewig vas",
+            "Gebruik leemgrond om die tweede laag te maak. Maak die derde laag van klei",
+            "Laat die lae oor die volgende paar dae droog en hard word",
+            "Gebruik die kunsmessie en sny die bottel versigtig los",
+            "Trek die waspapier af",
+            "Kyk na die lae van jou sedimentêre gesteente. Wat sien jy?",
+            "Breek die gesteente. Soek die fossieltstukkies. Wat sien jy?",
+            "Teken jou sedimentêre gesteente in jou oefenboek. Gee byskrifte vir die verskillende lae en fossieltstukkies",
+            "Werk saam met 'n maat. Ruil gesteentes uit en kyk aandagtig na die een wat jy kry. Let op na wat jy sien en skryf jou waarnemings neer. Bespreek jou waarnemings met jou maat. Maak voorstelle en lewer kommentaar oor die volgende:"
+          ],
+          "evaluation_criteria": [
+            "die lae",
+            "die grondpartikels",
+            "die mate van samepersing",
+            "fossielvondste",
+            "gebied van vorming"
+          ]
+        }
+      ],
+      
+      "vocabulary": []
+    },
+    
+    {
+      "unit_id": "eenheid_6",
+      "unit_number": 6,
+      "title": "'n Paar gebruike van sedimentêre gesteentes",
+      "weeks": "Week 4-6",
+      "pages": "88",
+      "topic_category": "gesteentes",
+      
+      "key_concepts": {
+        "gesteente_gebruike": {
+          "types": [
+            {
+              "name": "Sandsteen",
+              "uses": [
+                "Glasware, byvoorbeeld koeldrankglase, word hiervan gemaak",
+                "Kaggels, mure en paadjies word hiermee gebou",
+                "Word as sierstene (vir versiering) gebruik",
+                "Word as vloerstene en plaveisel gebruik",
+                "Word as vloer- en muurbedekkings in chemiese fabrieke gebruik omdat dit die uitwerking van die chemikalieë kan weerstaan",
+                "Word in die fondasies van geboue en steenmure gebruik"
+              ],
+              "interesting_fact": "Die Golden Gate Hoogland Nasionale Park in die Vrystaat is bekend vir lieflike sandsteenberge"
+            },
+            {
+              "name": "Skalie",
+              "uses": [
+                "Word as vulstof in verf gebruik",
+                "Daksement",
+                "Grondstof in die vervaardiging van stene",
+                "Bron van natuurlike gas"
+              ],
+              "interesting_fact": "Onder die droë oppervlak van die Karoo lê rotslae wat skeliegas bevat. Die rotslae strek kilometers ver. Daar word gesê dat Suid-Afrika die vyfde grootste skaliegasreserwes ter wêreld het. Die proses waartydens gas uit skalie ontgin word, staan as hidroliese breking bekend. Skaliegas is moontlik die volgende groot bron van kragvoorsiening in ons land. In terme van die ekonomie sal dit 'n goeie ding vir Suid-Afrika wees, maar só 'n projek moet goed beplan word sodat die omgewing teen waterskaarste en besoedeling beskerm word"
+            },
+            {
+              "name": "Kalkstee",
+              "uses": [
+                "Die bou van paaie en geboue",
+                "Die maak van vloerbedekkings",
+                "'n Bestanddeel van Portland-sement (PPC) om beton te vervaardig",
+                "Die maak van wit papier",
+                "Die vervaardiging van remskoene",
+                "Die maak van tandepasta",
+                "Medikasie",
+                "Die uitlê van tuine",
+                "Verf",
+                "Die suiwering van suiker",
+                "Die voorbereiding van wol en kleursel",
+                "Die neutralisering van water"
+              ],
+              "interesting_fact": "Die Sterkfonteingrotte is kalksteen grotte van spesiale belang in Gauteng. Talle reste en fossiele is in dié gebied gevind. Kalkstee is die beste materiaal vir die preservering van bene. Binne-in die Sterkfonteingrotte"
+            }
+          ]
+        }
+      },
+      
+      "activities": [
+        {
+          "activity_id": "aktiviteit_6.1",
+          "title": "Identifiseer produkte wat van sedimentêre gesteentes gemaak is",
+          "duration_minutes": 30,
+          "description": "Gebruik die inligting in hierdie eenheid om jou te help. Maak 'n lys in jou oefenboek van alledaagse items wat jy gebruik wat van sedimentêre gesteentes gemaak is"
+        }
+      ],
+      
+      "vocabulary": []
+    },
+    
+    {
+      "unit_id": "eenheid_7",
+      "unit_number": 7,
+      "title": "Fossiele in rotse",
+      "weeks": "Week 6-8",
+      "pages": "89-90",
+      "topic_category": "fossiele",
+      
+      "key_concepts": {
+        "fossiele_definisie": {
+          "definition": "Oorblyfsels van plante en diere wat lank gelede dood is, word dikwels in gesteentes gevind. Hierdie oorblyfsels word fossiele genoem en wetenskaplikes gebruik dit om meer van die lewe op aarde miljoene jare gelede te leer",
+          "oldest_fossils": "Die oudste fossiele waarvan wetenskaplikes weet, is dié van eenvoudige organismes, soos bakterieë en alge, wat biljoene jare gelede gelewe het",
+          "oldest_fossil_age": 3500000000,
+          "diversity_development": "Omdat hierdie lewende wesens nie harde dele soos bene en tande gehad het nie, is daar min fossiele van hulle. Daar is egter al, volgens verslae, fossiele gevind wat 600 miljoen jaar oud is. In hierdie tyd het diere met skelette en harde skulpe verskyn. Namate diere ontwikkel en meer kompleks as alge en bakterieë geraak het, is daar meer fossiele ontdek",
+          "rock_age": "Gesteentes wat ongeveer 300 miljoen jaar oud is, bevat verskillende soorte plant- en dierfossiele, soos seeperdjies, tiere, voëls, dinosaurusse, naaldekokers en blomme"
+        },
+        
+        "fossiel_vorming": {
+          "dry_areas": "Wanneer plante en diere wat in droë gebiede voorkom, doodgaan, vorm hulle nie so dikwels fossiele soos dié wat in vogtige plekke of in water bly nie",
+          "where_found": "Fossiele word dikwels in sedimentêre gesteentes aangetref",
+          "formation_process": "In Eenheid 4 het jy geleer dat sedimentêre gesteentes baie stadig en laag vir laag vorm. Ons weet dat die gesteentes onder die grond (naby die oppervlak van die aarde) jonger is as die gesteentes wat dieper onder die grondoppervlak lê. Die onderste sedimentêre gesteentes is die oudste. Deur die gesteentes te bestudeer, kan wetenskaplikes, geoloë en argeoloë bepaal hoe oud hulle is en hoe oud die fossiele is wat in hulle voorkom. Hulle kan ook vasstel watter mense, diere en plante gedurende 'n sekere tydperk geleef het. Verder kan hulle vasstel hoe groot hulle was, hoe hulle gelewe het en of hulle uitgestert het"
+        },
+        
+        "fossiel_tipes": {
+          "count": 2,
+          "types": [
+            {
+              "name": "Liggaamsfossiele",
+              "description": "In die volgende eenheid gaan jy meer hieroor leer"
+            },
+            {
+              "name": "Spoorfossiele",
+              "description": "In die volgende eenheid gaan jy meer hieroor leer"
+            }
+          ]
+        },
+        
+        "fossiel_vorming_detail": {
+          "good_fossil_conditions": "Om 'n goeie fossiel te vorm, moet die organisme gou na sy dood met sand of modder bedek word, anders sal sy oorskot verrot of deur ander diere geëet word. Selfs as die plant of dier deur sand of modder bedek word, verdwyn die sagte dele van die organisme in elk geval. Slegs die tande, skulpe en bene van diere en die hout van plante bly gewoonlik oor. Dit is met behulp van hierdie harde dele dat ons kan leer wat in die veld gebeur het",
+          
+          "process_steps": [
+            {
+              "stage": "Miljoene jare lank word die sediment wat die oorblyfsels van die plant of dier bedek",
+              "description": "saamgepers soos wat nog sediment bo-op die laag neerlgê word. Die water word uitgedruk en die sediment versteen. By sekere soorte fossiele los die skulp of bene op en dan kan slegs 'n holte, wat ons 'n gietvorm noem, gesien word"
+            },
+            {
+              "stage": "Wetenskaplikes vul dan die gietvorm met sement om 'n rekord van die fossiel te behou",
+              "description": ""
+            }
+          ],
+          
+          "diagram_stages": [
+            {
+              "number": 1,
+              "description": "Hierdie vis het 400 miljoen jaar gelede in die see gelewe"
+            },
+            {
+              "number": 2,
+              "description": "Die dooie vis se liggaam het tot op die seebodem gesink"
+            },
+            {
+              "number": 3,
+              "description": "Die vis se liggaam is gou met sand- en moddersediment bedek. Die vis het ontbind en die geraamte van die vis het 'n fossiel geword wat tussen sedimentêre gesteentelae saamgepers is"
+            }
+          ]
+        }
+      },
+      
+      "activities": [
+        {
+          "activity_id": "aktiviteit_7.1",
+          "title": "Bespreek fossiele",
+          "duration_minutes": 30,
+          "description": "Lees deur die inligting in hierdie eenheid en beantwoord dan die volgende vrae oor fossiele in jou oefenboek. Beantwoord die vrae in volsinne",
+          "questions": [
+            "Wat is 'n fossiel?",
+            "Wie bestudeer fossiele?",
+            "Wat kan ons alles uitvind deur fossiele te bestudeer?",
+            "Waar vind 'n mens fossiele?",
+            "Noem die twee verskillende fossielsoort"
+          ]
+        }
+      ],
+      
+      "vocabulary": [],
+      
+      "images": [
+        {
+          "description": "amberfossiel - insect trapped in amber"
+        },
+        {
+          "description": "dierfossiel - animal fossil in rock"
+        },
+        {
+          "description": "mensfossiel - human skull fossil"
+        },
+        {
+          "description": "visfossiel - fish fossil impression"
+        },
+        {
+          "description": "plantfossiel - plant fossil impression"
+        },
+        {
+          "description": "dinosaurusfossiel - dinosaur skeleton fossil"
+        }
+      ]
+    },
+    
+    {
+      "unit_id": "eenheid_8",
+      "unit_number": 8,
+      "title": "Liggaams- en spoorfossiele",
+      "weeks": "Week 6-8",
+      "pages": "91-93",
+      "topic_category": "fossiele",
+      
+      "key_concepts": {
+        "liggaamsfossiele": {
+          "definition": "Liggaamsfossiele wys ons hoe 'n plant of dier baie jare gelede gelyk het. Hierdie fossiele is uit die harde dele van dier- of plantliggame gevorm",
+          "examples": [
+            "Liggaamsfossiele sluit bene",
+            "tande",
+            "kloue",
+            "blare",
+            "stamme",
+            "vel",
+            "embrio's en sade"
+          ],
+          "best_preserved": "Die liggaamsfossiele wat die beste behoue bly, is fossiele van die hardste liggaamsdele, soos die bene en tande. Bene is die algemeenste liggaamsfossiele wat opgespoor word en het ons baie gehelp om meer oor dinosaurusse uit te vind",
+          "reference": "Kyk weer na bladsy 89 om foto's van liggaamsfossiele te sien"
+        },
+        
+        "spoorfossiele": {
+          "definition": "Spoorfossiele word gevorm van spore wat deur diere-aktiwiteit agtergelaat word. Hierdie fossiele sluit voetspore, tandmerke, neste, eiers en uitskeidings in",
+          "utility": "Spoorfossiele is baie nuttig omdat dit leidrade oor dierelewe van baie jare gelede verskaf. Die algemeenste soort spoorfossiel is voetspore"
+        },
+        
+        "extinct_vs_living": {
+          "table": [
+            {
+              "extinct_animal": "Indricotherium",
+              "extinct_description": "Renoster",
+              "living_animal": "Rhinoceros",
+              "living_description": "Modern rhinoceros"
+            },
+            {
+              "extinct_animal": "Deinosuchus",
+              "extinct_description": "Krokodil",
+              "living_animal": "Crocodile",
+              "living_description": "Modern crocodile"
+            },
+            {
+              "extinct_animal": "Wollerige mammoet",
+              "extinct_description": "Olifant",
+              "living_animal": "Elephant",
+              "living_description": "Modern elephant"
+            }
+          ],
+          "description": "Ontleed die tabel hieronder wat tekeninge van uitgestorwe diere (wat wetenskaplikes kan teken uit fossielvondste) en diere wat vandag leef, aandui"
+        }
+      },
+      
+      "activities": [
+        {
+          "activity_id": "aktiviteit_8.1",
+          "title": "Identifiseer fossiele",
+          "duration_minutes": 10,
+          "steps": [
+            "Teken 'n tabel met twee kolomme in jou oefenboek. Gee elke kolom 'n opskrif, naamlik liggaamsfossiele en spoorfossiele",
+            "Skryf die soorte fossiele hieronder in die regte kolom van die tabel neer: voetspoor, eier, spoor, tande, varing, klou"
+          ]
+        },
+        {
+          "activity_id": "aktiviteit_8.2",
+          "title": "Vergelyk uitgestorwe diere en diere wat vandag leef",
+          "duration_minutes": 45,
+          "steps": [
+            "Ontleed die tabel hieronder wat tekeninge van uitgestorwe diere (wat wetenskaplikes kan teken uit fossielvondste) en diere wat vandag leef, aandui",
+            "Skryf enige ooreenkomste en verskille neer wat jy tussen die diere kan sien"
+          ]
+        },
+        {
+          "activity_id": "praktiese_aktiviteit_8.3",
+          "title": "Maak 'n model van 'n fossiel",
+          "duration_minutes": 135,
+          "description": "In Aktiwiteit 8.3 gaan jy 'n model maak van fossiele wat tussen verskillende lae sedimentêre gesteentes ingebed is. Dink aan wat jy reeds geleer het en gebruik klei en voorwerpe soos bene, blare en skulpe wat die fossiele voorstel, om jou model te maak. Jy het reeds geleer dat daar liggaams- en spoorfossiele bestaan. Maak seker jy verstaan die verskil tussen hierdie fossiele",
+          "materials": [
+            "Klei-resep: 1 koppie sout, 1 koppie meel, ½ koppie water",
+            "Meng die meel en sout in 'n bak. Knie en druk die deeg tot dit kleibaile vorm. Voeg kleursel by"
+          ],
+          "model_requirements": [
+            "van drie verskillende kleure klei gemaak word om die verskillende lae van die sedimentêre gesteentes uit te beeld",
+            "voorwerpe bevat wat liggaams- en spoorfossiele voorstel",
+            "voorwerpe bevat wat nie almal ewe oud is nie en uit verskillende eras kom"
+          ],
+          "steps": [
+            {
+              "stage": "Stap 1 Ondersoek",
+              "duration_minutes": 20,
+              "description": "Werk saam met die res van jou groep en bespreek die voorwerpe wat julle in julle model gaan gebruik om fossiele voor te stel. Julle model moet uit drie verskillende lae bestaan om die verskillende lae van die sedimentêre gesteentes voor te stel. Die lae toon die verskillende eras. Die laag met die oudste fossiele sal heel onder wees. Julle groep moet voorwerpe kies wat liggaams- en spoorfossiele voorstel wat nie almal ewe oud is nie",
+              "options": [
+                "hoenderbene wat skoon en droog is",
+                "'n veer",
+                "iets wat van plastiek gemaak is",
+                "'n stukkie swart papier wat steenkool voorstel",
+                "'n skuifspeld",
+                "eierdoppe"
+              ],
+              "creative_note": "Julle kan aan nog voorwerpe dink om te gebruik. Wees kreatief! Maak 'n lys van die voorwerpe wat julle gaan gebruik en skryf dit in julle oefenboeke neer"
+            },
+            {
+              "stage": "Stap 2 Ontwerp",
+              "duration_minutes": 20,
+              "description": "Kommunikeer julle idee deur die verskillende lae van julle model in jou oefenboek te teken. Wys ook watter voorwerpe julle in elke laag gaan gebruik. Onthou dat die oudste fossiele in die onderste laag en die jongste fossiele in die boonste laag sal wees. Gee jou skets byskrifte en dui aan wat die voorwerpe voorstel"
+            },
+            {
+              "stage": "Stap 3 Maak",
+              "duration_minutes": 60,
+              "description": "Werk saam met die ander lede van jou groep en bespreek hoe julle die model gaan maak, wat sedimentêre gesteentes met drie lae, met verskillende fossiele in elke laag, gaan moet voorstel. Voordat julle begin om die model te maak, moet julle al julle gereedskap en materiaal reg hê",
+              "sub_tasks": [
+                {
+                  "task": "a) Maak 'n lys van materiaal en gereedskap",
+                  "duration_minutes": 10,
+                  "steps": [
+                    "Skryf die volgende opskrif in jou oefenboek neer: Materiaal en Gereedskap",
+                    "Werk uit watter gereedskap julle gaan gebruik en die materiaal wat julle nodig gaan hê om die model te maak. As daar 'n stuk gereedskap is wat 'n mens dalk kan seermaak, kan jy 'n 'V' langs die gereedskap se naam skryf. Dit sal jou herinner om versigtig daarmee te werk. Onthou dat julle al die bestanddele moet neerskryf wat julle gaan gebruik om die klei te maak. Die onderwyser gaan julle vra om drie verskillende kleure klei te maak"
+                  ]
+                },
+                {
+                  "task": "b) Maak 'n model van fossiele in sedimentêre rots",
+                  "duration_minutes": 50,
+                  "steps": [
+                    "Maak julle model in die klas. Maak seker dat julle groep die volgende het: al die materiaal en gereedskap wat julle nodig gaan hê, die skets van die model",
+                    "Werk saam aan die model. Maak seker dat elke lid van die groep presies weet wat om te doen. Werk versigtig en netjies. Moenie materiaal mors nie - dit is nie goed vir die omgewing nie"
+                  ]
+                }
+              ]
+            },
+            {
+              "stage": "Stap 4 Evalueer",
+              "duration_minutes": 15,
+              "description": "Skryf die volgende opskrif in jou oefenboek neer: Evalueer. Teken en voltooi die volgende tabel deur 'ja' of 'nee' neer te skryf",
+              "checklist": [
+                "Bestaan julle model uit drie verskillende lae?",
+                "Is daar liggaams- en spoorfossiele in die model?",
+                "Is die fossiele van drie verskillende eras (nie almal ewe oud nie)?",
+                "Is die model goed gemaak?"
+              ],
+              "reflection": [
+                "Die dele van ons model wat goed gewerk het, is ...",
+                "Ons kan ons model verbeter deur ... en ..."
+              ]
+            }
+          ],
+          "group_work_note": "Groepwerk moet: 'n Leier kies, As 'n span werk, Deel en luister na almal se idees, Dink altyd aan die taak wat julle moet doen"
+        }
+      ],
+      
+      "vocabulary": [
+        {
+          "term": "ingebed",
+          "definition": "om diep in 'n stof begrawe te wees"
+        },
+        {
+          "term": "eras",
+          "definition": "tydperke"
+        }
+      ]
+    },
+    
+    {
+      "unit_id": "eenheid_9",
+      "unit_number": 9,
+      "title": "Die belangrikheid van Suid-Afrikaanse fossiele",
+      "weeks": "Week 6-8",
+      "pages": "94-95",
+      "topic_category": "fossiele",
+      
+      "key_concepts": {
+        "suid_afrika_fossiele": {
+          "importance": "Suid-Afrika het een van die grootste fossielversamelings ter wêreld. Die fossiele is in spelonke, klipgroewe, bouterreine en onder die grond ontdek",
+          "richness": "Suid-Afrika, net soos ander dele van Afrika, is ryk aan fossielskatte",
+          "cradle_of_humankind": "Hierdie feit het daartoe gelei dat ons kontinent nou die 'Wieg van die Mensdom' genoem word",
+          "oldest_rocks": "In Suid-Afrika se oudste rotse, wat meestal in die Barberton-omgewing aangetref word, is klein fossiele deur wetenskaplikes gevind. Dit is fossiele van alge en bakterieë wat die oudste en eenvoudigste vorm van lewe is",
+          "algae_age": 3500000000,
+          "algae_description": "Hierdie fossiele bewys dat eenvoudige plante ongeveer 3 500 miljoen jaar gelede in Suid-Afrika gegroei het"
+        },
+        
+        "sterkfontein": {
+          "name": "Sterkfonteingrotte",
+          "location": "geleë in 'n vallei aan die westekant van Johannesburg",
+          "nickname": "Wieg van die Mensdom",
+          "significance": "Die fossiele wat hier gekry is, is belangrik omdat dit bewys dat daar al 300 miljoen jaar gelede mense in die omgewing gewoon het. Die mense het 'n verskeidenheid gereedskap gehad en kon vuur maak",
+          "discovery_location": "Fossiele wat op 'n plaas in die area gevind is, bevat oorblyfsels van sabeltandkatte. Die fossiele is in 'n put gevind wat moontlik as 'n strik vir diere gebruik is. Daar is ook oorblyfsels van wildebeeste, paddas, rotte en ape ontdek"
+        },
+        
+        "karoo_fossils": {
+          "name": "Die Karoo",
+          "location": "Die bekende Sterkfonteingrotte is geleë in 'n vallei aan die westekant van Johannesburg",
+          "rock_layers": "Wetenskaplikes glo dat die gesteentes in die Karoo in vier verskillende fases gevorm het. Hulle kan dit vasstel deur die verskillende fossiele wat in die rotslae gekry is, te bestudeer",
+          "reptile_fossil": "Wetenskaplikes het fossiele, insluitend dié van 'n waterreptiel wat 'n Mesosaurus genoem is, gevind",
+          "other_fossils": [
+            "Hulle het ook plantfossiele soos steenkool",
+            "reptielfossiele wat dinosaurus-fossiele insluit",
+            "en die fossiele van amfibieë en visse gevind"
+          ],
+          "description": "Fossiele van haaitande wat in die Swartheerpas naby Oudtshoorn gevind is, beteken dat hierdie area, wat nou droog is, eers onder water was"
+        },
+        
+        "swartkrans_cave": {
+          "name": "Swartkrans",
+          "description": "Ongeveer 117 000 jaar gelede het ons eerste menslike voorouer langs 'n strand in Langebaan geloop. Soos wat die sand verhard en sandsteen gevorm het, het haar voetspore versteen (gefossileer). Die versteende voetspore kan vandag in die Suid Afrikaanse Museum in Kaapstad gesien word. Wetenskaplikes stem saam dat dit die oudste bewys van 'n moderne mens is"
+        },
+        
+        "karoo_national_park": {
+          "name": "Karoo Nasionale Park",
+          "description": "van die belangrikste argeologiese terreine in die wêreld word in die fossielryke Karoo aangetref. Die Khoi-San het hier gebly. Die Weskus Fossielpark by Langebaan in die Wes-kaap, het fossiele van beide see- en landdiere. Hierdie fossielpark, wat voorheen 'n myn was, bevat fossiele van kameelperde, olifante, seekoeie, walvisse en uitgestorwe wilde bere. Hierdie diere het eens op 'n tyd rondgeloop waar Kaapstad vandag is! Hierdie vondste beteken dat daar 'n groot vloed was. Al die diere van die oseane, riviere en land is deur die water na die park meegesleur. Die oorblyfsels is met lae sediment bedek. Die sagte dele het ontbind. Skedels, bene en tande het oorgebly en fossiele gevorm",
+          "ystervark_info": "Na die Ystydperk, 280 miljoen jaar gelede, is die grootste deel van Suid-Afrika deur 'n groot binnelandse see bedek. Dik lae sandsteen is afgevoer na moerasagtige dele tussen die rotse. Die hout, blare, borne en plante het versteen en steenkool gevorm wat vandag in Suid-Afrika ontgin word"
+        }
+      },
+      
+      "activities": [
+        {
+          "activity_id": "aktiviteit_9.1",
+          "title": "Dui fossielvondste op 'n kaart aan",
+          "duration_minutes": 45,
+          "description": "Trek die onderstaande kaart in jou oefenboek na en kleur die areas in waar die fossiele waarvon jy in hierdie eenheid geleer het, gevind is. Gebruik 'n atlas en die internet om jou te help",
+          "map_areas": [
+            "Sterkfontein",
+            "Karoo",
+            "Langebaan",
+            "Other fossil sites in South Africa"
+          ]
+        }
+      ],
+      
+      "pretfeit_boxes": [
+        {
+          "title": "Mense wat argeologie studeer, ondersoek die oorblyfsels van geboue, gereedskap, diere, plante en ander voorwerpe",
+          "description": "'n Argeologiese terrein is 'n plek waar oorblyfsels vir waarneming en studie gehou word"
+        },
+        {
+          "title": "Fossiele is dikwels wit en staan duidelik teen die donker gesteentes uit",
+          "description": "Wetenskaplikes gebruik naalde, beitels en roetspanne om fossiele te verwyder sonder om hulle te beskadig"
+        }
+      ],
+      
+      "vocabulary": [],
+      
+      "images": [
+        {
+          "description": "Sterkfonteinvallei interior cave photo"
+        },
+        {
+          "description": "Mosasaurus - prehistoric marine reptile illustration"
+        },
+        {
+          "description": "Fossielvondste op die fossielvoetpad in die Karoo Nasionale Park - fossil display"
+        },
+        {
+          "description": "Fossielvondtse in die Weskus Fossielpark - fossil excavation site"
+        },
+        {
+          "description": "Fossielvondse in Suid-Afrika - map of South Africa showing fossil sites"
+        }
+      ]
+    },
+    
+    {
+      "unit_id": "eenheid_10",
+      "unit_number": 10,
+      "title": "Belangrike Suid-Afrikaanse fossiele",
+      "weeks": "Week 6-8",
+      "pages": "96-97",
+      "topic_category": "fossiele",
+      
+      "key_concepts": {
+        "afrika_dinosaurus": {
+          "name": "Brontosaurus (ook bekend as Apatosaurus)",
+          "description": "Die grootste dinosaurus in suidelike Afrika was die plantetende Brontosaurus",
+          "location": "Fossiele van dié dier is in die Oos-Kaap gevind",
+          "length_meters": 12,
+          "comparison": "Dit is korter as die Amerikaanse Diplodocus en is die grootste dier wat ooit op aarde geleef het",
+          "features": "Die Brontosaurus het 'n klein koppie en 'n lang, geboë nek gehad sodat dit aan die toppe van borne kon eet",
+          "examples": [
+            {
+              "name": "Heterodontosaurus",
+              "description": "daar is bevind dat hierdie dinosaurus 'n eienaardige stel tande gehad het. Van die tande was aangepas om deur vleis te sny en onder om plante te maal. Dit sê vir ons dat die Heterodontosaurus 'n omnivoor was (het vleis en plante geëet)"
+            },
+            {
+              "name": "Suchomimus",
+              "description": "hierdie dinosaurus se naam beteken 'krokodil-namaaksel'. Kan jy sien waarom?"
+            },
+            {
+              "name": "Afrovenator",
+              "description": "hierdie dinosaurus staan bekend as die Afrika-jagter"
+            }
+          ]
+        },
+        
+        "mensagtige_fossiele": {
+          "title": "Belangrike mensagtige fossiele",
+          "discoveries": [
+            {
+              "scientist": "Dr Lee Berger",
+              "discovery": "Australopithecus sediba",
+              "description": "het die mees onlangse ontdekking gemaak toe hy Australopithecus sediba ontdek het. Hierdie fossiel verskaf belangrike leidrade van hoe die mens ontwikkel het",
+              "other_locations": [
+                "Ander fossielvondste sluit in mevrou Ples",
+                "die Taung-kind"
+              ]
+            }
+          ],
+          "images": [
+            {
+              "description": "Australopithecus sediba en Mevrou Ples - skull fossils"
+            }
+          ]
+        },
+        
+        "selakant": {
+          "name": "Die selakant",
+          "description": "Die selakant is 'n unieke vis en staan as 'n 'lewende fossiel' bekend",
+          "discovery_year": 1938,
+          "discovery_location": "Omtrent 100 jaar voordat die eerste lewende selakant waargeneem is, is fossiele van hierdie eienaardige vis opgevind",
+          "comparison": "Vissermanne langs die kus van Oos-Londen het in 1938 'n vis gevang wat hulle nog nooit vantevore gesien het nie. Die vis het vier vinne gehad en iets wat soos stompiebene gelyk het. Hulle het dit na die Universiteit van Grahamstad geneem wat dit as 'n selakant geïdentifiseer het - 'n vis wat almal gedink uitgestert het!",
+          "images": [
+            {
+              "description": "'n Lewende selakant en 'n selakant-fossiel"
+            }
+          ]
+        }
+      },
+      
+      "activities": [
+        {
+          "activity_id": "aktiviteit_10.1",
+          "title": "Gevallestudie: Die selakant",
+          "duration_minutes": 60,
+          "description": "Lees die artikel hieronder",
+          "article_title": "Selakant by Sodwana opgespoor",
+          "article_source": "Johannesburg - 'n selakant - 'n prehistoriese vis wat eens as uitgestorwe beskou is en nou as 'n 'lewende fossiel' bekend is - is verlede week deur duikers in Sodwanabaai opgemerk. Die bestuurder van die Afrika-selakant-ekosisteem program, Tony Ribbink, het Maandag gesê die vis is op die ongewone diepte van 54 meter gevind - wat vlak is vir selakante",
+          "article_content": [
+            "'In wetenskaplike studies van selakante sedert hulle in 1938 herontdek is, is hulle nog nooit in water vlakker as 100 meter waargeneem nie,' het hy gesê",
+            "'Dit kom voor asof hulle die koeler watertemperatuur - tussen 16 °C en 21 °C - van die dieper dele van die oseaan verkies. Om 'n selakant in sulke vlak water te ontdek, kon ons teorieë oor die toestande waarin hulle floreer op sy kop gekeer het. Maar die watertemperatuur by die 54 meter waar hierdie een verlede week opgemerk is, was inderdaad 17 °C. So ons teorie is veilig.'",
+            "Die duikers wat die selakant opgemerk het, het vir ongeveer vyf minute by die vis vertoef en dit uit alle hoeke afgeneem voordat hulle na die oppervlak teruggekeer het",
+            "'Ons was versigtig om nie op sy gebied inbreuk te maak nie en dit het nie gelyk of die vis in die minste deur ons versteur is nie.'",
+            "Hoewel slegs 18 selakante sover in Suid-Afrika ontdek is - almal in die Sodwana-gebied - is die Suid-Afrikaanse groep die tweede grootste in die wêreld"
+          ],
+          "source": "Bron: Aangepas en vertaal, News24, besoek op 24 Februarie 2004",
+          "question": "Stel jou voor jy is 'n duiker wat tydens 'n duiksessie 'n selakant opgemerk het. Skryf 'n brief aan 'n maat waarin jy presies verduidelik wat jy gesien het. Beskryf die vis aan hom of haar en verduidelik waarom dit so opwindend is dat jy een raakgesien het"
+        }
+      ],
+      
+      "vocabulary": [],
+      
+      "wenke": {
+        "title": "Wenke",
+        "content": "'n Mens spreek selakant só uit: 'see-le-kant'"
+      }
+    }
+  ],
+  
+  "formele_assessering": {
+    "task_7": {
+      "title": "Formele Assesseringstaak 7",
+      "topic": "Praktiese taak: Neem waar hoe verskillende grondsoorte water deurlaat",
+      "duration_minutes": 120,
+      "safety": "Pas al die veiligheidsreëls toe wat jy geleer het vir wanneer jy 'n skêr en kunsmessie gebruik. Hierdie is skerp instrumente en kan gevaarlik wees as dit nie versigtig gebruik word nie",
+      "materials": [
+        "4 eenliter plastiek-koeldrankbottels",
+        "skêr/handwerkmessie",
+        "4 diep graankosbakkies",
+        "dik karton",
+        "2 bakstene",
+        "4 etikette",
+        "klein grafie",
+        "water en 'n koppie",
+        "baie dun stukkies materiaal of gaas",
+        "horlosie met minuutwyser",
+        "grondmonsters van verskillende terreine, soos:"
+      ],
+      "ground_samples": [
+        "'n saailand (vir leemgrond)",
+        "'n sandput, strand of rivierloop (vir sandgrond)",
+        "vogtige gebied (vir kleigrond)",
+        "rotsagtige, klipperige pad (vir gruis)"
+      ],
+      "steps": [
+        "Versamel grond- en gruismonsters. Maak seker dat jy nie die omringende grond versteur nie",
+        "Bestudeer die diagram en sny onder toesig van die onderwyser 5 cm van elke plastiekbottel se onderkant at",
+        "Bou 'n klein staander, soortgelyk aan die een in die diagram hieronder, om die bottels onderstebo in te plaas. Maak seker dat die struktuur die bottels kan hou wanneer dit met grond gevul is",
+        "Plak 'n stukkie baie dun materiaal of gaas oor die opening van elke bottel",
+        "Vul een bottel met gruisklippies, 'n ander een met sandgrond, een met kleigrond en een met leemgrond",
+        "Plaas 'n graankosbakkie onder elke bottel om die druppels op te vang",
+        "Gooi 'n koppie water op presies dieselfde tyd bo by elke bottel in",
+        "Meet die tyd wat dit die water neem om deur elke soort grond te loop (tel tot by die naaste minuut) en neem ook waar watter grond klam bly en watter droog is"
+      ],
+      "total_marks": 20
+    }
+  },
+  
+  "hersieningsaktiwiteit_4": {
+    "title": "Hersieningsaktiwiteit 4",
+    "questions": [
+      {
+        "number": 1,
+        "question": "Noem drie soorte grond",
+        "marks": 3
+      },
+      {
+        "number": 2,
+        "question": "Verduidelik hoe 'n fossiel gevorm word",
+        "marks": 3
+      },
+      {
+        "number": 3,
+        "question": "Waarom is grond so belangrik vir ons?",
+        "marks": 2
+      },
+      {
+        "number": 4,
+        "question": "Noem twee fossielgroepe waarvan jy geleer het",
+        "marks": 2
+      },
+      {
+        "number": 5,
+        "question": "Beskou die diagramme hieronder",
+        "sub_questions": [
+          {
+            "letter": "a",
+            "question": "Identifiseer tot watter fossielgroepe hierdie fossiele behoort",
+            "marks": null
+          },
+          {
+            "letter": "b",
+            "question": "Teken 'n tabel met twee kolomme en tabuleer jou antwoord. Gebruik die fossielgroepname as opskrifte vir die kolomme",
+            "marks": 2
+          },
+          {
+            "letter": "c",
+            "question": "Groepeer die fossiele in die gepaste groep deur dit in die regte kolom te skryf",
+            "marks": 4
+          }
+        ]
+      },
+      {
+        "number": 6,
+        "question": "Skryf twee gebruike vir kalksteen neer",
+        "marks": 2
+      },
+      {
+        "number": 7,
+        "question": "Identifiseer die soort gesteente hieronder",
+        "marks": 1,
+        "image": "Red rock formation photograph"
+      },
+      {
+        "number": 8,
+        "question": "Noem 'n bekende en belangrike Suid-Afrikaanse fossiel",
+        "marks": 1
+      }
+    ],
+    "total_marks": 20
+  },
+  
+  "woordelys": {
+    "terms": [
+      {
+        "term": "A",
+        "definition": "alge: 'n baie eenvoudige plantjie wat in water of op vogtige plekke groei; dit het nie 'n stingel, wortels of blare nie; die samestelling van die plantjie is baie eenvoudig; seewier is 'n voorbeeld van 'n alg",
+        "page": 4
+      },
+      {
+        "term": "aangemaakties",
+        "definition": "spiere wat in teenoorgestelde rigtings werk",
+        "page": 11
+      },
+      {
+        "term": "B",
+        "definition": "bakterieë: baie klein, lewende organismes; die bakterieë in die grond help om die mis van diere en dooie plant- en dieremateriaal af te breek",
+        "page": 76
+      },
+      {
+        "term": "bedreig",
+        "definition": "die gevaar loop om uit te sterf",
+        "page": 2
+      },
+      {
+        "term": "bogrond",
+        "definition": "die boonste laag grond wat baie ryk is aan organiese materie en mikroörganismes; min plantlewe is moontlik sonder bogrond",
+        "page": 76
+      },
+      {
+        "term": "bolyf",
+        "definition": "die middelste deel van die liggaam, uitgesluit die kop, nek en ledemate",
+        "page": 8
+      },
+      {
+        "term": "bors",
+        "definition": "om maklik breek",
+        "page": 32
+      },
+      {
+        "term": "D",
+        "definition": "deursigtig: 'n mens kan daardeur sien",
+        "page": 42
+      },
+      {
+        "term": "diversiteit",
+        "definition": "in Natuurwetenskappe verwys diversiteit na baie verskillende soorte organismes of spesies",
+        "page": 2
+      },
+      {
+        "term": "dormant",
+        "definition": "om onaktief te wees, asof aan die slaap",
+        "page": 23
+      },
+      {
+        "term": "E",
+        "definition": "eienskappe: die kenmerke van 'n materiaal of waarvan dit gemaak is",
+        "page": 30
+      },
+      {
+        "term": "ekostelsels",
+        "definition": "plekke waar plante, diere en nie-lewende materiaal aangetref word",
+        "page": 2
+      },
+      {
+        "term": "elektriese boks",
+        "definition": "ook genoem distribusiebord, vanwaar elektrisiteit na die hele huis versprei word",
+        "page": 59
+      },
+      {
+        "term": "eras",
+        "definition": "tydperke",
+        "page": 92
+      },
+      {
+        "term": "F",
+        "definition": "filament: 'n baie dun stukkie metaaldraad binne 'n gloeilampie wat gloei wanneer elektrisiteit daardeur vloei",
+        "page": 54
+      },
+      {
+        "term": "fossiele",
+        "definition": "die oorblyfsels van 'n plant of dier wat lank gelede gelewe het word in die grond behou en kan so hard soos rots word",
+        "page": 83
+      },
+      {
+        "term": "fossielbrandstowwe",
+        "definition": "brandstowwe soos steenkool, et olie wat lank gelede uit oorblyfsels van lewende organismes, soos byvoorbeeld korne, gevorm is",
+        "page": 5A
+      },
+      {
+        "term": "fotosintese",
+        "definition": "'n proses waartydens ligenergie, water en koolstofdioksied (CO2): 'n gas wat uit koolstof en suurstof bestaan",
+        "page": 18
+      },
+      {
+        "term": "G",
+        "definition": "gooipleister: 'n mengsel van modder of klei en gras waarmee mure geëmsel word",
+        "page": 39
+      },
+      {
+        "term": "grootgestremd",
+        "definition": "kort en nie baie groot nie",
+        "page": 5
+      },
+      {
+        "term": "grof",
+        "definition": "ru",
+        "page": 78
+      },
+      {
+        "term": "grondbewaring",
+        "definition": "beskerming van grond teen erosie",
+        "page": 81
+      },
+      {
+        "term": "gruis",
+        "definition": "stukkies klip",
+        "page": 38
+      },
+      {
+        "term": "H",
+        "definition": "hulpbron: iets wat tot nut van die mens is",
+        "page": 76
+      },
+      {
+        "term": "hulpeloos",
+        "definition": "kan nie sonder hulp eet of rondbeweeg nie",
+        "page": 26
+      },
+      {
+        "term": "humus",
+        "definition": "die deel van grond wat uit organismes bestaan wat voorheen gelewe het",
+        "page": 78
+      },
+      {
+        "term": "I",
+        "definition": "ingebed: tussenin lê",
+        "page": 92
+      },
+      {
+        "term": "K",
+        "definition": "katapult: 'n toestel wat lank gelede gebruik is om klippe mee te gooi",
+        "page": 65
+      },
+      {
+        "term": "knie",
+        "definition": "om deeg met jou hande te rek en te strek om dit vir gebruik voor te berei",
+        "page": 40
+      },
+      {
+        "term": "koolstofdioksied (CO2)",
+        "definition": "'n gas wat uit koolstof en suurstof bestaan",
+        "page": 18
+      },
+      {
+        "term": "korrodeer",
+        "definition": "breek af; slyt",
+        "page": 36
+      },
+      {
+        "term": "kraakbeen",
+        "definition": "sagte, sponsagtige weefsel in die liggaam, dit ondersteun die bene in die liggaam en werk amper soos skokbrekers van 'n motor; jong bene bestaan eers net uit kraakbeen",
+        "page": 7
+      },
+      {
+        "term": "kragmas",
+        "definition": "'n hoë staalstruktuur wat kragdrade ver bo die grond hou",
+        "page": 34
+      },
+      {
+        "term": "L",
+        "definition": "ligamente: sterk weefsel in die liggaam wat bene aan mekaar of aan kraakbeen heg",
+        "page": 8
+      },
+      {
+        "term": "lewensiklus",
+        "definition": "die fases van 'n plant of dier se lewe vanaf geboorte totdat dit doodgaan",
+        "page": 22
+      }
+    ]
+  }
+}
