@@ -3,7 +3,8 @@ import { BookOpen, CheckCircle, XCircle, RotateCcw, Award, History, User, Calend
 import curriculumData from './data/curriculum.json';
 
 const NatuurwetenskappeQuiz = () => {
-  const [gameState, setGameState] = useState('setup'); // setup, playing, results, history
+  const [gameState, setGameState] = useState('setup'); // setup, playing, results, history, historyReview
+  const [selectedSubject, setSelectedSubject] = useState('natuurwetenskappe');
   const [selectedUnits, setSelectedUnits] = useState([]);
   const [difficulty, setDifficulty] = useState('mixed');
   const [questionCount, setQuestionCount] = useState(10);
@@ -16,11 +17,42 @@ const NatuurwetenskappeQuiz = () => {
   const [score, setScore] = useState(0);
   const [reviewMode, setReviewMode] = useState(false);
   const [testHistory, setTestHistory] = useState([]);
+  const [reviewingTest, setReviewingTest] = useState(null);
   const resultSavedRef = useRef(false);
+
+  // Available subjects configuration
+  const subjects = {
+    natuurwetenskappe: {
+      name: 'Natuurwetenskappe',
+      grade: 'Graad 5',
+      quarter: 'Kwartaal 4',
+      data: curriculumData
+    }
+    // Add more subjects here in the future
+  };
 
   // Load history from localStorage on mount
   useEffect(() => {
-    const savedHistory = localStorage.getItem('natuurwetenskappe_history');
+    // Try new key first, then fallback to old key for backward compatibility
+    let savedHistory = localStorage.getItem('quiz_history');
+    if (!savedHistory) {
+      savedHistory = localStorage.getItem('natuurwetenskappe_history');
+      if (savedHistory) {
+        // Migrate old data to new format
+        const oldHistory = JSON.parse(savedHistory);
+        const migratedHistory = oldHistory.map(test => ({
+          ...test,
+          subject: 'natuurwetenskappe',
+          subjectName: 'Natuurwetenskappe',
+          questions: test.questions || [],
+          userAnswers: test.userAnswers || {}
+        }));
+        localStorage.setItem('quiz_history', JSON.stringify(migratedHistory));
+        localStorage.removeItem('natuurwetenskappe_history');
+        setTestHistory(migratedHistory);
+        return;
+      }
+    }
     if (savedHistory) {
       setTestHistory(JSON.parse(savedHistory));
     }
@@ -31,27 +63,33 @@ const NatuurwetenskappeQuiz = () => {
     if (gameState === 'results' && !reviewMode && !resultSavedRef.current && quizQuestions.length > 0) {
       const percentage = (score / quizQuestions.length) * 100;
       const gradeInfo = getGrade(percentage);
+      const currentSubjectData = subjects[selectedSubject];
 
       const testResult = {
         id: Date.now(),
         studentName: studentName,
         date: new Date().toISOString(),
+        subject: selectedSubject,
+        subjectName: currentSubjectData.name,
         score: score,
         totalQuestions: quizQuestions.length,
         percentage: percentage,
         grade: gradeInfo.grade,
         difficulty: difficulty,
         selectedUnits: selectedUnits.map(unitId => {
-          const unit = curriculumData.units.find(u => u.unit_id === unitId);
+          const unit = currentSubjectData.data.units.find(u => u.unit_id === unitId);
           return unit ? unit.title : unitId;
         }),
-        webQuestionsIncluded: quizQuestions.filter(q => q.source === 'web').length
+        webQuestionsIncluded: quizQuestions.filter(q => q.source === 'web').length,
+        // Store full test data for review
+        questions: quizQuestions,
+        userAnswers: selectedAnswers
       };
 
       // Save to state and localStorage
       setTestHistory(prevHistory => {
         const newHistory = [testResult, ...prevHistory];
-        localStorage.setItem('natuurwetenskappe_history', JSON.stringify(newHistory));
+        localStorage.setItem('quiz_history', JSON.stringify(newHistory));
         return newHistory;
       });
 
@@ -62,20 +100,13 @@ const NatuurwetenskappeQuiz = () => {
     if (gameState !== 'results') {
       resultSavedRef.current = false;
     }
-  }, [gameState, reviewMode, score, quizQuestions, studentName, difficulty, selectedUnits]);
-
-  // Save test result to history
-  const saveTestResult = (result) => {
-    const newHistory = [result, ...testHistory];
-    setTestHistory(newHistory);
-    localStorage.setItem('natuurwetenskappe_history', JSON.stringify(newHistory));
-  };
+  }, [gameState, reviewMode, score, quizQuestions, studentName, difficulty, selectedUnits, selectedSubject, selectedAnswers, subjects]);
 
   // Clear history
   const clearHistory = () => {
     if (window.confirm('Is jy seker jy wil alle geskiedenis uitvee?')) {
       setTestHistory([]);
-      localStorage.removeItem('natuurwetenskappe_history');
+      localStorage.removeItem('quiz_history');
     }
   };
 
@@ -530,11 +561,12 @@ const NatuurwetenskappeQuiz = () => {
     });
 
     // Add web questions if count is set
+    const currentSubjectData = subjects[selectedSubject].data;
     if (webQuestionCount > 0) {
       const relevantWebQuestions = webQuestions.filter(q => {
         // Only include web questions for selected units
         return selectedUnits.some(unitId => {
-          const unit = curriculumData.units.find(u => u.unit_id === unitId);
+          const unit = currentSubjectData.units.find(u => u.unit_id === unitId);
           return unit && q.unit.includes(unit.title);
         });
       });
@@ -657,6 +689,9 @@ const NatuurwetenskappeQuiz = () => {
 
   // Setup Screen
   if (gameState === 'setup') {
+    const currentSubject = subjects[selectedSubject];
+    const currentSubjectData = currentSubject.data;
+
     return (
       <div className="min-h-screen bg-gradient-to-br from-blue-50 to-green-50 p-4">
         <div className="max-w-4xl mx-auto">
@@ -664,9 +699,9 @@ const NatuurwetenskappeQuiz = () => {
             <div className="text-center mb-8">
               <BookOpen className="w-16 h-16 mx-auto text-blue-600 mb-4" />
               <h1 className="text-4xl font-bold text-gray-800 mb-2">
-                Natuurwetenskappe Toets
+                Toets Stelsel
               </h1>
-              <p className="text-gray-600">Graad 5 - Kwartaal 4</p>
+              <p className="text-gray-600">Kies jou vak en begin</p>
             </div>
 
             {/* Navigation Buttons */}
@@ -681,6 +716,28 @@ const NatuurwetenskappeQuiz = () => {
             </div>
 
             <div className="space-y-6">
+              {/* Subject Selection */}
+              <div>
+                <h2 className="text-xl font-semibold mb-3 flex items-center gap-2">
+                  <BookOpen className="w-6 h-6 text-blue-600" />
+                  Kies Vak:
+                </h2>
+                <select
+                  value={selectedSubject}
+                  onChange={(e) => {
+                    setSelectedSubject(e.target.value);
+                    setSelectedUnits([]); // Reset unit selection when changing subject
+                  }}
+                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-600 focus:outline-none text-lg bg-white"
+                >
+                  {Object.entries(subjects).map(([key, subject]) => (
+                    <option key={key} value={key}>
+                      {subject.name} - {subject.grade} {subject.quarter}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
               {/* Student Name */}
               <div>
                 <h2 className="text-xl font-semibold mb-3 flex items-center gap-2">
@@ -701,7 +758,7 @@ const NatuurwetenskappeQuiz = () => {
               <div>
                 <h2 className="text-xl font-semibold mb-3">Kies Eenhede:</h2>
                 <div className="space-y-2">
-                  {curriculumData.units.map(unit => (
+                  {currentSubjectData.units.map(unit => (
                     <label key={unit.unit_id} className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg cursor-pointer hover:bg-blue-50">
                       <input
                         type="checkbox"
@@ -1135,56 +1192,74 @@ const NatuurwetenskappeQuiz = () => {
                     key={test.id}
                     className="bg-gray-50 rounded-xl p-6 border-2 border-gray-200 hover:border-purple-300 transition"
                   >
-                    <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-                      {/* Left: Student Info */}
-                      <div className="flex-1">
-                        <div className="flex items-center gap-3 mb-2">
-                          <User className="w-5 h-5 text-purple-600" />
-                          <h3 className="text-xl font-bold text-gray-800">{test.studentName}</h3>
-                          <span className={`px-3 py-1 rounded-full text-sm font-bold ${
-                            test.grade === 'A' ? 'bg-green-100 text-green-700' :
-                            test.grade === 'B' ? 'bg-blue-100 text-blue-700' :
-                            test.grade === 'C' ? 'bg-yellow-100 text-yellow-700' :
-                            test.grade === 'D' ? 'bg-orange-100 text-orange-700' :
-                            'bg-red-100 text-red-700'
-                          }`}>
-                            Graad {test.grade}
-                          </span>
-                        </div>
-                        <div className="flex items-center gap-2 text-sm text-gray-600 mb-2">
-                          <Calendar className="w-4 h-4" />
-                          {new Date(test.date).toLocaleString('af-ZA', {
-                            year: 'numeric',
-                            month: 'long',
-                            day: 'numeric',
-                            hour: '2-digit',
-                            minute: '2-digit'
-                          })}
-                        </div>
-                        <div className="flex flex-wrap gap-2 mt-3">
-                          {test.selectedUnits.map((unit, idx) => (
-                            <span key={idx} className="px-2 py-1 bg-blue-100 text-blue-700 rounded text-xs font-medium">
-                              {unit}
+                    <div className="flex flex-col gap-4">
+                      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                        {/* Left: Student Info */}
+                        <div className="flex-1">
+                          <div className="flex items-center gap-3 mb-2">
+                            <User className="w-5 h-5 text-purple-600" />
+                            <h3 className="text-xl font-bold text-gray-800">{test.studentName}</h3>
+                            <span className={`px-3 py-1 rounded-full text-sm font-bold ${
+                              test.grade === 'A' ? 'bg-green-100 text-green-700' :
+                              test.grade === 'B' ? 'bg-blue-100 text-blue-700' :
+                              test.grade === 'C' ? 'bg-yellow-100 text-yellow-700' :
+                              test.grade === 'D' ? 'bg-orange-100 text-orange-700' :
+                              'bg-red-100 text-red-700'
+                            }`}>
+                              Graad {test.grade}
                             </span>
-                          ))}
-                          <span className="px-2 py-1 bg-gray-200 text-gray-700 rounded text-xs font-medium">
-                            {test.difficulty === 'easy' ? 'Maklik' : test.difficulty === 'medium' ? 'Gemiddeld' : test.difficulty === 'hard' ? 'Moeilik' : 'Gemeng'}
-                          </span>
-                          {test.webQuestionsIncluded > 0 && (
-                            <span className="px-2 py-1 bg-purple-100 text-purple-700 rounded text-xs font-medium">
-                              🌐 {test.webQuestionsIncluded} Internet
+                          </div>
+                          {/* Subject Name */}
+                          <div className="flex items-center gap-2 text-sm font-semibold text-blue-600 mb-2">
+                            <BookOpen className="w-4 h-4" />
+                            {test.subjectName || 'Natuurwetenskappe'}
+                          </div>
+                          <div className="flex items-center gap-2 text-sm text-gray-600 mb-2">
+                            <Calendar className="w-4 h-4" />
+                            {new Date(test.date).toLocaleString('af-ZA', {
+                              year: 'numeric',
+                              month: 'long',
+                              day: 'numeric',
+                              hour: '2-digit',
+                              minute: '2-digit'
+                            })}
+                          </div>
+                          <div className="flex flex-wrap gap-2 mt-3">
+                            {test.selectedUnits.map((unit, idx) => (
+                              <span key={idx} className="px-2 py-1 bg-blue-100 text-blue-700 rounded text-xs font-medium">
+                                {unit}
+                              </span>
+                            ))}
+                            <span className="px-2 py-1 bg-gray-200 text-gray-700 rounded text-xs font-medium">
+                              {test.difficulty === 'easy' ? 'Maklik' : test.difficulty === 'medium' ? 'Gemiddeld' : test.difficulty === 'hard' ? 'Moeilik' : 'Gemeng'}
                             </span>
-                          )}
+                            {test.webQuestionsIncluded > 0 && (
+                              <span className="px-2 py-1 bg-purple-100 text-purple-700 rounded text-xs font-medium">
+                                🌐 {test.webQuestionsIncluded} Internet
+                              </span>
+                            )}
+                          </div>
                         </div>
-                      </div>
 
-                      {/* Right: Score */}
-                      <div className="text-center md:text-right">
-                        <div className="text-4xl font-bold text-purple-600 mb-1">
-                          {test.percentage.toFixed(0)}%
-                        </div>
-                        <div className="text-sm text-gray-600">
-                          {test.score} / {test.totalQuestions} korrek
+                        {/* Right: Score */}
+                        <div className="text-center md:text-right">
+                          <div className="text-4xl font-bold text-purple-600 mb-1">
+                            {test.percentage.toFixed(0)}%
+                          </div>
+                          <div className="text-sm text-gray-600 mb-3">
+                            {test.score} / {test.totalQuestions} korrek
+                          </div>
+                          {test.questions && test.questions.length > 0 && (
+                            <button
+                              onClick={() => {
+                                setReviewingTest(test);
+                                setGameState('historyReview');
+                              }}
+                              className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition font-medium text-sm"
+                            >
+                              Hersien Antwoorde
+                            </button>
+                          )}
                         </div>
                       </div>
                     </div>
@@ -1192,6 +1267,133 @@ const NatuurwetenskappeQuiz = () => {
                 ))}
               </div>
             )}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // History Review Screen
+  if (gameState === 'historyReview' && reviewingTest) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-green-50 p-4">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-white rounded-2xl shadow-2xl p-8">
+            <div className="flex items-center justify-between mb-6">
+              <div>
+                <h1 className="text-3xl font-bold mb-2">Antwoord Hersiening</h1>
+                <p className="text-gray-600">
+                  {reviewingTest.studentName} - {reviewingTest.subjectName || 'Natuurwetenskappe'}
+                </p>
+                <p className="text-sm text-gray-500">
+                  {new Date(reviewingTest.date).toLocaleString('af-ZA', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit'
+                  })}
+                </p>
+              </div>
+              <button
+                onClick={() => setGameState('history')}
+                className="px-4 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition font-medium"
+              >
+                Terug
+              </button>
+            </div>
+
+            {/* Score Summary */}
+            <div className="bg-gradient-to-r from-purple-50 to-blue-50 rounded-xl p-6 mb-6 border border-purple-200">
+              <div className="flex items-center justify-between">
+                <div>
+                  <div className="text-sm text-gray-600 mb-1">Finale Punt</div>
+                  <div className="flex items-center gap-4">
+                    <span className="text-4xl font-bold text-purple-600">
+                      {reviewingTest.percentage.toFixed(0)}%
+                    </span>
+                    <span className={`px-4 py-2 rounded-full text-lg font-bold ${
+                      reviewingTest.grade === 'A' ? 'bg-green-100 text-green-700' :
+                      reviewingTest.grade === 'B' ? 'bg-blue-100 text-blue-700' :
+                      reviewingTest.grade === 'C' ? 'bg-yellow-100 text-yellow-700' :
+                      reviewingTest.grade === 'D' ? 'bg-orange-100 text-orange-700' :
+                      'bg-red-100 text-red-700'
+                    }`}>
+                      Graad {reviewingTest.grade}
+                    </span>
+                  </div>
+                </div>
+                <div className="text-right">
+                  <div className="text-2xl font-semibold text-gray-700">
+                    {reviewingTest.score} / {reviewingTest.totalQuestions}
+                  </div>
+                  <div className="text-sm text-gray-600">Korrek</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Questions Review */}
+            <div className="space-y-6">
+              {reviewingTest.questions.map((q, idx) => {
+                const userAnswer = reviewingTest.userAnswers[idx];
+                let isCorrect;
+                if (q.type === 'multiple_select') {
+                  const correct = q.correctAnswers.sort();
+                  const user = (userAnswer || []).sort();
+                  isCorrect = JSON.stringify(correct) === JSON.stringify(user);
+                } else {
+                  isCorrect = userAnswer === q.correctAnswer;
+                }
+
+                return (
+                  <div key={q.id} className={`p-4 rounded-xl ${isCorrect ? 'bg-green-50' : 'bg-red-50'}`}>
+                    <div className="flex items-start space-x-3">
+                      {isCorrect ? (
+                        <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                      ) : (
+                        <XCircle className="w-6 h-6 text-red-600 flex-shrink-0 mt-1" />
+                      )}
+                      <div className="flex-1">
+                        <div className="flex items-start gap-2 mb-2">
+                          <p className="font-bold flex-1">Vraag {idx + 1}: {q.question}</p>
+                          {q.source === 'web' && (
+                            <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-purple-100 text-purple-800 border border-purple-300 whitespace-nowrap">
+                              🌐 Internet
+                            </span>
+                          )}
+                        </div>
+                        <p className="text-sm mb-1">
+                          <span className="font-semibold">Jou antwoord: </span>
+                          {q.type === 'multiple_select'
+                            ? (userAnswer || []).join(', ') || 'Geen'
+                            : q.type === 'true_false'
+                              ? (userAnswer ? 'Waar' : userAnswer === false ? 'Onwaar' : 'Geen')
+                              : userAnswer || 'Geen'}
+                        </p>
+                        {!isCorrect && (
+                          <p className="text-sm mb-1">
+                            <span className="font-semibold">Korrekte antwoord: </span>
+                            {q.type === 'multiple_select'
+                              ? q.correctAnswers.join(', ')
+                              : q.type === 'true_false'
+                                ? (q.correctAnswer ? 'Waar' : 'Onwaar')
+                                : q.correctAnswer}
+                          </p>
+                        )}
+                        <p className="text-sm text-gray-700 italic">{q.explanation}</p>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+
+            <button
+              onClick={() => setGameState('history')}
+              className="mt-6 w-full bg-blue-600 text-white py-3 rounded-xl font-bold hover:bg-blue-700 transition"
+            >
+              Terug na Geskiedenis
+            </button>
           </div>
         </div>
       </div>
