@@ -1,0 +1,266 @@
+{
+  "curriculum": {
+    "subject": "Geografie",
+    "grade": "Graad 5",
+    "quarter": "Kwartaal 3",
+    "publisher": "Pearson",
+    "series": "Kollig Op"
+  },
+
+  "units": [
+    {
+      "unit_id": "eenheid_1",
+      "unit_number": 1,
+      "title": "Die weer",
+      "weeks": "Week 1-2",
+      "pages": "6-15",
+      "topic_category": "weer",
+
+      "key_concepts": {
+        "weer_elemente": {
+          "description": "Hoe is die weer vandag? Hoe warm of hoe koud is dit? Is daar baie wolke in die lug? Reën dit vandag? Waai die wind? Hoe sterk is hierdie wind? Wanneer jy hierdie vrae beantwoord, beskryf jy elemente van die weer",
+          "elements": [
+            {
+              "name": "temperatuur",
+              "definition": "hoe warm of koud iets is"
+            },
+            {
+              "name": "wolkbedekking",
+              "definition": "die hoeveelheid wolke wat in die lug is"
+            },
+            {
+              "name": "reënval",
+              "definition": "die hoeveelheid reën wat in 'n gebied val"
+            },
+            {
+              "name": "windsnelheid",
+              "definition": "hoe vinnig of sterk die wind waai"
+            }
+          ]
+        },
+
+        "temperatuur": {
+          "description": "Ons kan temperatuur beskryf deur woorde soos die volgende te gebruik",
+          "terms": [
+            "baie koud",
+            "koud",
+            "koel",
+            "matig",
+            "warm",
+            "baie warm",
+            "bloedig warm"
+          ]
+        },
+
+        "wolkbedekking": {
+          "description": "Wolkbedekking is hoeveel wolke daar in die lug is. Ons gebruik die volgende woorde om wolkbedekking te beskryf",
+          "types": [
+            {
+              "name": "Wolkloos",
+              "description": "Geen wolke in die lug"
+            },
+            {
+              "name": "Gedeeltelik bewolk",
+              "description": "Party wolke, party helder lug"
+            },
+            {
+              "name": "Bewolk/Betrokke",
+              "description": "Baie wolke in die lug"
+            }
+          ]
+        },
+
+        "windsnelheid": {
+          "description": "Ons kan windsnelheid beskryf deur woorde soos die volgende te gebruik",
+          "levels": [
+            "windstil",
+            "ligte briesie",
+            "sterk wind",
+            "stormwind"
+          ]
+        },
+
+        "reënval": {
+          "description": "Reënval word gemeet met 'n reënmeter",
+          "measurement": "Ons meet hoeveel millimeter reën gevall het"
+        }
+      },
+
+      "vocabulary": [
+        {
+          "term": "temperatuur",
+          "definition": "hoe warm of koud iets is"
+        },
+        {
+          "term": "wolkbedekking",
+          "definition": "die hoeveelheid wolke wat in die lug is"
+        },
+        {
+          "term": "reënval",
+          "definition": "die hoeveelheid reën wat in 'n gebied val"
+        },
+        {
+          "term": "windsnelheid",
+          "definition": "hoe vinnig of sterk die wind waai"
+        }
+      ]
+    },
+
+    {
+      "unit_id": "eenheid_2",
+      "unit_number": 2,
+      "title": "Meet die weer",
+      "weeks": "Week 2-3",
+      "pages": "16-20",
+      "topic_category": "weer",
+
+      "key_concepts": {
+        "weerinstrumente": {
+          "description": "Ons gebruik spesiale instrumente om die weer te meet",
+          "instruments": [
+            {
+              "name": "termometer",
+              "measures": "temperatuur",
+              "unit": "grade Celsius (°C)"
+            },
+            {
+              "name": "reënmeter",
+              "measures": "reënval",
+              "unit": "millimeters (mm)"
+            },
+            {
+              "name": "windwyser",
+              "measures": "windrigting",
+              "unit": "N, S, O, W"
+            },
+            {
+              "name": "windsak",
+              "measures": "windsnelheid en windrigting",
+              "unit": "visueel"
+            }
+          ]
+        }
+      },
+
+      "vocabulary": [
+        {
+          "term": "termometer",
+          "definition": "instrument om temperatuur te meet"
+        },
+        {
+          "term": "reënmeter",
+          "definition": "instrument om reënval te meet"
+        },
+        {
+          "term": "windwyser",
+          "definition": "instrument om windrigting te wys"
+        }
+      ]
+    },
+
+    {
+      "unit_id": "eenheid_3",
+      "unit_number": 3,
+      "title": "Weerpatrone",
+      "weeks": "Week 3-4",
+      "pages": "21-25",
+      "topic_category": "weer",
+
+      "key_concepts": {
+        "weerpatrone": {
+          "description": "Die weer verander nie sommer net nie. Daar is patrone in die weer",
+          "patterns": [
+            "Seisoene",
+            "Dag en nag temperature",
+            "Reënpatrone"
+          ]
+        },
+
+        "seisoene": {
+          "description": "Suid-Afrika het vier seisoene",
+          "seasons": [
+            {
+              "name": "Somer",
+              "months": "Desember, Januarie, Februarie",
+              "characteristics": "warm, soms baie warm"
+            },
+            {
+              "name": "Herfs",
+              "months": "Maart, April, Mei",
+              "characteristics": "koeler, blare val"
+            },
+            {
+              "name": "Winter",
+              "months": "Junie, Julie, Augustus",
+              "characteristics": "koud, soms ry dit"
+            },
+            {
+              "name": "Lente",
+              "months": "September, Oktober, November",
+              "characteristics": "warmer, blomme bloei"
+            }
+          ]
+        }
+      },
+
+      "vocabulary": [
+        {
+          "term": "patroon",
+          "definition": "iets wat herhaal word"
+        },
+        {
+          "term": "seisoen",
+          "definition": "tydperk van die jaar met sekere weersomstandighede"
+        }
+      ]
+    },
+
+    {
+      "unit_id": "eenheid_4",
+      "unit_number": 4,
+      "title": "Klimaat",
+      "weeks": "Week 4-5",
+      "pages": "26-30",
+      "topic_category": "klimaat",
+
+      "key_concepts": {
+        "klimaat_vs_weer": {
+          "weer": "Die toestand van die atmosfeer op 'n spesifieke dag",
+          "klimaat": "Die gemiddelde weersomstandighede oor 'n lang tydperk (30 jaar of meer)"
+        },
+
+        "klimaatsones": {
+          "description": "Suid-Afrika het verskillende klimaatsones",
+          "zones": [
+            {
+              "name": "Warm, vogtige kus",
+              "location": "KwaZulu-Natal",
+              "characteristics": "warm, baie reën"
+            },
+            {
+              "name": "Warm, droë binneland",
+              "location": "Noordwes, Noordkaap",
+              "characteristics": "warm, min reën"
+            },
+            {
+              "name": "Gematigde kus",
+              "location": "Weskaap",
+              "characteristics": "nie te warm of te koud nie, winterreën"
+            }
+          ]
+        }
+      },
+
+      "vocabulary": [
+        {
+          "term": "klimaat",
+          "definition": "gemiddelde weersomstandighede oor 'n lang tydperk"
+        },
+        {
+          "term": "klimaatsone",
+          "definition": "gebied met sekere klimaatsomstandighede"
+        }
+      ]
+    }
+  ]
+}

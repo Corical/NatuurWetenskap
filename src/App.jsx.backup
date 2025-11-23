@@ -2,8 +2,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import { BookOpen, CheckCircle, XCircle, RotateCcw, Award, History, User, Calendar, TrendingUp } from 'lucide-react';
 import curriculumData from './data/curriculum.json';
 import geografieData from './data/geografie.json';
-import geografieQuestions from './questions/geografieQuestions';
-import natuurwetenskappeQuestions from './questions/natuurwetenskappeQuestions';
 
 const NatuurwetenskappeQuiz = () => {
   const [gameState, setGameState] = useState('setup'); // setup, playing, results, history, historyReview
@@ -128,12 +126,8 @@ const NatuurwetenskappeQuiz = () => {
   const generateQuestions = () => {
     const allQuestions = [];
 
-    // Get the appropriate question bank based on selected subject
-    const questionBank = selectedSubject === 'geografie' ? geografieQuestions : natuurwetenskappeQuestions;
-
-    // Legacy inline questions for backward compatibility (kept for reference)
-    // These are now replaced by the imported question banks
-    const unit1Questions_OLD = [
+    // Unit 1: Earth Movement Questions
+    const unit1Questions = [
       {
         id: 'u1_q1',
         unit: 'Die aarde beweeg',
@@ -816,12 +810,17 @@ const NatuurwetenskappeQuiz = () => {
       }
     ];
 
-    // Combine questions based on selected units using imported question banks
-    const unitMap = {
-      'eenheid_1': questionBank.unit1 || [],
-      'eenheid_2': questionBank.unit2 || [],
-      'eenheid_3': questionBank.unit3 || [],
-      'eenheid_4': questionBank.unit4 || []
+    // Combine questions based on selected units
+    const unitMap = selectedSubject === 'geografie' ? {
+      'eenheid_1': geografieUnit1Questions,
+      'eenheid_2': geografieUnit2Questions,
+      'eenheid_3': geografieUnit3Questions,
+      'eenheid_4': geografieUnit4Questions
+    } : {
+      'eenheid_1': unit1Questions,
+      'eenheid_2': unit2Questions,
+      'eenheid_3': unit3Questions,
+      'eenheid_4': unit4Questions
     };
 
     selectedUnits.forEach(unitId => {

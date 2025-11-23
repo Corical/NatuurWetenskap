@@ -1,4 +1,11 @@
 {
+  "permissions": {
+    "allow": [
+      "Bash(copy:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm start)"
+    ]
+  },
   "disabledMcpjsonServers": [
     "mcpql"
   ]
