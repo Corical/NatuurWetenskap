@@ -640,7 +640,7 @@ const NatuurwetenskappeQuiz = () => {
                 <input
                   type="range"
                   min="5"
-                  max="20"
+                  max="100"
                   value={questionCount}
                   onChange={(e) => setQuestionCount(parseInt(e.target.value))}
                   className="w-full"
