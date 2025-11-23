@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { BookOpen, CheckCircle, XCircle, RotateCcw, Award, History, User, Calendar, TrendingUp } from 'lucide-react';
 import curriculumData from './data/curriculum.json';
 
@@ -16,6 +16,7 @@ const NatuurwetenskappeQuiz = () => {
   const [score, setScore] = useState(0);
   const [reviewMode, setReviewMode] = useState(false);
   const [testHistory, setTestHistory] = useState([]);
+  const resultSavedRef = useRef(false);
 
   // Load history from localStorage on mount
   useEffect(() => {
@@ -24,6 +25,44 @@ const NatuurwetenskappeQuiz = () => {
       setTestHistory(JSON.parse(savedHistory));
     }
   }, []);
+
+  // Save test result when entering results state
+  useEffect(() => {
+    if (gameState === 'results' && !reviewMode && !resultSavedRef.current && quizQuestions.length > 0) {
+      const percentage = (score / quizQuestions.length) * 100;
+      const gradeInfo = getGrade(percentage);
+
+      const testResult = {
+        id: Date.now(),
+        studentName: studentName,
+        date: new Date().toISOString(),
+        score: score,
+        totalQuestions: quizQuestions.length,
+        percentage: percentage,
+        grade: gradeInfo.grade,
+        difficulty: difficulty,
+        selectedUnits: selectedUnits.map(unitId => {
+          const unit = curriculumData.units.find(u => u.unit_id === unitId);
+          return unit ? unit.title : unitId;
+        }),
+        webQuestionsIncluded: quizQuestions.filter(q => q.source === 'web').length
+      };
+
+      // Save to state and localStorage
+      setTestHistory(prevHistory => {
+        const newHistory = [testResult, ...prevHistory];
+        localStorage.setItem('natuurwetenskappe_history', JSON.stringify(newHistory));
+        return newHistory;
+      });
+
+      resultSavedRef.current = true;
+    }
+
+    // Reset the saved flag when leaving results screen
+    if (gameState !== 'results') {
+      resultSavedRef.current = false;
+    }
+  }, [gameState, reviewMode, score, quizQuestions, studentName, difficulty, selectedUnits]);
 
   // Save test result to history
   const saveTestResult = (result) => {
@@ -896,28 +935,6 @@ const NatuurwetenskappeQuiz = () => {
   if (gameState === 'results') {
     const percentage = (score / quizQuestions.length) * 100;
     const gradeInfo = getGrade(percentage);
-
-    // Save result to history (only once when results are shown)
-    useEffect(() => {
-      if (!reviewMode) {
-        const testResult = {
-          id: Date.now(),
-          studentName: studentName,
-          date: new Date().toISOString(),
-          score: score,
-          totalQuestions: quizQuestions.length,
-          percentage: percentage,
-          grade: gradeInfo.grade,
-          difficulty: difficulty,
-          selectedUnits: selectedUnits.map(unitId => {
-            const unit = curriculumData.units.find(u => u.unit_id === unitId);
-            return unit ? unit.title : unitId;
-          }),
-          webQuestionsIncluded: quizQuestions.filter(q => q.source === 'web').length
-        };
-        saveTestResult(testResult);
-      }
-    }, []);
 
     if (reviewMode) {
       return (
