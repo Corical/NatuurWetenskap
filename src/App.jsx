@@ -1,19 +1,44 @@
 import React, { useState, useEffect } from 'react';
-import { BookOpen, CheckCircle, XCircle, RotateCcw, Award } from 'lucide-react';
+import { BookOpen, CheckCircle, XCircle, RotateCcw, Award, History, User, Calendar, TrendingUp } from 'lucide-react';
 import curriculumData from './data/curriculum.json';
 
 const NatuurwetenskappeQuiz = () => {
-  const [gameState, setGameState] = useState('setup'); // setup, playing, results
+  const [gameState, setGameState] = useState('setup'); // setup, playing, results, history
   const [selectedUnits, setSelectedUnits] = useState([]);
   const [difficulty, setDifficulty] = useState('mixed');
   const [questionCount, setQuestionCount] = useState(10);
   const [webQuestionCount, setWebQuestionCount] = useState(0);
+  const [studentName, setStudentName] = useState('');
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState({});
   const [quizQuestions, setQuizQuestions] = useState([]);
   const [showExplanation, setShowExplanation] = useState(false);
   const [score, setScore] = useState(0);
   const [reviewMode, setReviewMode] = useState(false);
+  const [testHistory, setTestHistory] = useState([]);
+
+  // Load history from localStorage on mount
+  useEffect(() => {
+    const savedHistory = localStorage.getItem('natuurwetenskappe_history');
+    if (savedHistory) {
+      setTestHistory(JSON.parse(savedHistory));
+    }
+  }, []);
+
+  // Save test result to history
+  const saveTestResult = (result) => {
+    const newHistory = [result, ...testHistory];
+    setTestHistory(newHistory);
+    localStorage.setItem('natuurwetenskappe_history', JSON.stringify(newHistory));
+  };
+
+  // Clear history
+  const clearHistory = () => {
+    if (window.confirm('Is jy seker jy wil alle geskiedenis uitvee?')) {
+      setTestHistory([]);
+      localStorage.removeItem('natuurwetenskappe_history');
+    }
+  };
 
   // Generate quiz questions from curriculum
   const generateQuestions = () => {
@@ -500,6 +525,10 @@ const NatuurwetenskappeQuiz = () => {
   };
 
   const startQuiz = () => {
+    if (!studentName.trim()) {
+      alert('Voer asseblief jou naam in!');
+      return;
+    }
     if (selectedUnits.length === 0) {
       alert('Kies asseblief ten minste een eenheid!');
       return;
@@ -601,7 +630,34 @@ const NatuurwetenskappeQuiz = () => {
               <p className="text-gray-600">Graad 5 - Kwartaal 4</p>
             </div>
 
+            {/* Navigation Buttons */}
+            <div className="flex gap-3 mb-6">
+              <button
+                onClick={() => setGameState('history')}
+                className="flex items-center gap-2 px-4 py-2 bg-purple-100 text-purple-700 rounded-lg hover:bg-purple-200 transition font-medium"
+              >
+                <History className="w-5 h-5" />
+                Bekyk Geskiedenis
+              </button>
+            </div>
+
             <div className="space-y-6">
+              {/* Student Name */}
+              <div>
+                <h2 className="text-xl font-semibold mb-3 flex items-center gap-2">
+                  <User className="w-6 h-6 text-blue-600" />
+                  Jou Naam:
+                </h2>
+                <input
+                  type="text"
+                  value={studentName}
+                  onChange={(e) => setStudentName(e.target.value)}
+                  placeholder="Voer jou naam in..."
+                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-600 focus:outline-none text-lg"
+                  maxLength={50}
+                />
+              </div>
+
               {/* Unit Selection */}
               <div>
                 <h2 className="text-xl font-semibold mb-3">Kies Eenhede:</h2>
@@ -841,6 +897,28 @@ const NatuurwetenskappeQuiz = () => {
     const percentage = (score / quizQuestions.length) * 100;
     const gradeInfo = getGrade(percentage);
 
+    // Save result to history (only once when results are shown)
+    useEffect(() => {
+      if (!reviewMode) {
+        const testResult = {
+          id: Date.now(),
+          studentName: studentName,
+          date: new Date().toISOString(),
+          score: score,
+          totalQuestions: quizQuestions.length,
+          percentage: percentage,
+          grade: gradeInfo.grade,
+          difficulty: difficulty,
+          selectedUnits: selectedUnits.map(unitId => {
+            const unit = curriculumData.units.find(u => u.unit_id === unitId);
+            return unit ? unit.title : unitId;
+          }),
+          webQuestionsIncluded: quizQuestions.filter(q => q.source === 'web').length
+        };
+        saveTestResult(testResult);
+      }
+    }, []);
+
     if (reviewMode) {
       return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 to-green-50 p-4">
@@ -954,6 +1032,149 @@ const NatuurwetenskappeQuiz = () => {
                 <span>Begin Nuwe Toets</span>
               </button>
             </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // History Screen
+  if (gameState === 'history') {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 p-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="bg-white rounded-2xl shadow-2xl p-8">
+            {/* Header */}
+            <div className="flex items-center justify-between mb-8">
+              <div>
+                <h1 className="text-4xl font-bold text-gray-800 mb-2 flex items-center gap-3">
+                  <History className="w-10 h-10 text-purple-600" />
+                  Toets Geskiedenis
+                </h1>
+                <p className="text-gray-600">Alle vorige toetse</p>
+              </div>
+              <button
+                onClick={() => setGameState('setup')}
+                className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition font-medium"
+              >
+                Terug na Toets
+              </button>
+            </div>
+
+            {/* Clear History Button */}
+            {testHistory.length > 0 && (
+              <div className="mb-6 flex justify-end">
+                <button
+                  onClick={clearHistory}
+                  className="px-4 py-2 bg-red-100 text-red-700 rounded-lg hover:bg-red-200 transition font-medium text-sm"
+                >
+                  Vee Alle Geskiedenis Uit
+                </button>
+              </div>
+            )}
+
+            {/* Statistics Summary */}
+            {testHistory.length > 0 && (
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
+                <div className="bg-blue-50 p-4 rounded-xl border border-blue-200">
+                  <div className="text-sm text-gray-600 mb-1">Totale Toetse</div>
+                  <div className="text-3xl font-bold text-blue-600">{testHistory.length}</div>
+                </div>
+                <div className="bg-green-50 p-4 rounded-xl border border-green-200">
+                  <div className="text-sm text-gray-600 mb-1">Gemiddelde Punt</div>
+                  <div className="text-3xl font-bold text-green-600">
+                    {(testHistory.reduce((acc, test) => acc + test.percentage, 0) / testHistory.length).toFixed(0)}%
+                  </div>
+                </div>
+                <div className="bg-yellow-50 p-4 rounded-xl border border-yellow-200">
+                  <div className="text-sm text-gray-600 mb-1">Beste Graad</div>
+                  <div className="text-3xl font-bold text-yellow-600">
+                    {testHistory.reduce((best, test) => {
+                      const grades = ['A', 'B', 'C', 'D', 'E'];
+                      return grades.indexOf(test.grade) < grades.indexOf(best) ? test.grade : best;
+                    }, 'E')}
+                  </div>
+                </div>
+                <div className="bg-purple-50 p-4 rounded-xl border border-purple-200">
+                  <div className="text-sm text-gray-600 mb-1">Hoogste Telling</div>
+                  <div className="text-3xl font-bold text-purple-600">
+                    {Math.max(...testHistory.map(t => t.percentage)).toFixed(0)}%
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* History List */}
+            {testHistory.length === 0 ? (
+              <div className="text-center py-16">
+                <History className="w-20 h-20 mx-auto text-gray-300 mb-4" />
+                <p className="text-xl text-gray-500">Geen toets geskiedenis nog nie</p>
+                <p className="text-gray-400 mt-2">Voltooi jou eerste toets om dit hier te sien</p>
+              </div>
+            ) : (
+              <div className="space-y-4">
+                {testHistory.map((test) => (
+                  <div
+                    key={test.id}
+                    className="bg-gray-50 rounded-xl p-6 border-2 border-gray-200 hover:border-purple-300 transition"
+                  >
+                    <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                      {/* Left: Student Info */}
+                      <div className="flex-1">
+                        <div className="flex items-center gap-3 mb-2">
+                          <User className="w-5 h-5 text-purple-600" />
+                          <h3 className="text-xl font-bold text-gray-800">{test.studentName}</h3>
+                          <span className={`px-3 py-1 rounded-full text-sm font-bold ${
+                            test.grade === 'A' ? 'bg-green-100 text-green-700' :
+                            test.grade === 'B' ? 'bg-blue-100 text-blue-700' :
+                            test.grade === 'C' ? 'bg-yellow-100 text-yellow-700' :
+                            test.grade === 'D' ? 'bg-orange-100 text-orange-700' :
+                            'bg-red-100 text-red-700'
+                          }`}>
+                            Graad {test.grade}
+                          </span>
+                        </div>
+                        <div className="flex items-center gap-2 text-sm text-gray-600 mb-2">
+                          <Calendar className="w-4 h-4" />
+                          {new Date(test.date).toLocaleString('af-ZA', {
+                            year: 'numeric',
+                            month: 'long',
+                            day: 'numeric',
+                            hour: '2-digit',
+                            minute: '2-digit'
+                          })}
+                        </div>
+                        <div className="flex flex-wrap gap-2 mt-3">
+                          {test.selectedUnits.map((unit, idx) => (
+                            <span key={idx} className="px-2 py-1 bg-blue-100 text-blue-700 rounded text-xs font-medium">
+                              {unit}
+                            </span>
+                          ))}
+                          <span className="px-2 py-1 bg-gray-200 text-gray-700 rounded text-xs font-medium">
+                            {test.difficulty === 'easy' ? 'Maklik' : test.difficulty === 'medium' ? 'Gemiddeld' : test.difficulty === 'hard' ? 'Moeilik' : 'Gemeng'}
+                          </span>
+                          {test.webQuestionsIncluded > 0 && (
+                            <span className="px-2 py-1 bg-purple-100 text-purple-700 rounded text-xs font-medium">
+                              🌐 {test.webQuestionsIncluded} Internet
+                            </span>
+                          )}
+                        </div>
+                      </div>
+
+                      {/* Right: Score */}
+                      <div className="text-center md:text-right">
+                        <div className="text-4xl font-bold text-purple-600 mb-1">
+                          {test.percentage.toFixed(0)}%
+                        </div>
+                        <div className="text-sm text-gray-600">
+                          {test.score} / {test.totalQuestions} korrek
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         </div>
       </div>
